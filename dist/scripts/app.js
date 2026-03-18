@@ -73,37 +73,43 @@ document.addEventListener("DOMContentLoaded", function () {
     casesSlider();
 
     function reviewsSlider() {
-        // Инициализация Swiper
-        const cases__slider = new Swiper('.reviews__slider', {
-            slidesPerView: 3,
-            spaceBetween: 50,
-            centeredSlides: true,
-            direction: 'vertical',
-            loop: false,
-            initialSlide: 1, 
-            // autoplay: {
-            //     delay: 3500,
-            //     disableOnInteraction: false,
-            //     pauseOnMouseEnter: true
-            // },
+        console.log(234234);
+        
+    
+    const reviewsSlider = new Swiper('.reviews__slider', {
+        direction: 'vertical', // вертикальный
+        
+        slidesPerView: 3, // показываем 3 слайда одновременно
+        spaceBetween: 20,
+        autoplay: true,
+        
+        // Центрируем активный слайд
+        centeredSlides: true,
+        
+        loop: true,
+        
+        // Высота контейнера должна быть фиксированной!
+        // Добавь в CSS:
+        // .reviews__slider { height: 600px; }
+        
+        navigation: {
+            nextEl: '.cases__arr.arr-r',
+            prevEl: '.cases__arr.arr-l',
+        },
+        
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        
+        // Плавная прокрутка
+        mousewheel: {
+            sensitivity: 1,
+        },
+    });
+}
 
-
-            // Навигация
-            navigation: {
-                nextEl: '.cases__arr.arr-r',
-                prevEl: '.cases__arr.arr-l',
-            },
-
-            // Пагинация
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            }
-
-        });
-    }
-
-    reviewsSlider();
+reviewsSlider();
 
 
     function caseSlider() {

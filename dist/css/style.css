@@ -850,6 +850,28 @@ main.header__fixed {
   text-transform: uppercase;
 }
 
+.reviews__wrapper {
+  display: flex;
+  margin: 50px 0 50px;
+}
+
+.reviews__left {
+  flex: 1;
+}
+
+.reviews__right {
+  flex: 1;
+}
+
+.reviews__slider {
+  height: 600px;
+}
+
+.review__slide {
+  padding: 15px;
+  background: #b1b1b1;
+}
+
 footer {
   width: 100%;
   background: #000;
