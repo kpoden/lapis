@@ -1,0 +1,19 @@
+
+
+@font-face {
+  font-family: 'Druk Wide Cyr Medium';
+  src: url('../assets/fonts/drukwidecyr-medium.otf') format('opentype');
+  font-weight: 500; /* Medium обычно соответствует 500 */
+  font-style: normal;
+  font-display: swap; /* Оптимизация загрузки */
+}
+
+@font-face {
+    font-family: "Druk Wide Cyr";
+    src: url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.eot");
+    src: url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e7fa3e0f70e1466b2f73ee1ac39c8c30.svg#Druk Wide Cyr")format("svg");
+}

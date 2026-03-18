@@ -1,0 +1,123 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --c-blue: #4a00e0;
+  --c-purple: #8d2de2de;
+  --color-text-main: #111827;
+  --color-text-secondary: #6B7280;
+
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-accent: 0 6px 16px rgba(59, 130, 246, 0.3);
+  --container-width: 1260px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  background: #f5f5f5;
+  color: var(--color-text-main);
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  // display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  appearance: none; 
+  -webkit-appearance: none;
+}
+
+input {
+  outline: none;
+  appearance: none; 
+  box-shadow: none;
+  border: 1px solid #e8e8e8;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: .2s;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto; 
+    padding: 0px 20px;
+    position: relative;
+    width: 100%;
+}
+
+
+
+main, header, footer {
+  overflow: hidden;
+  min-width: 360px;
+}
+
+
+svg, img {
+    transition: .2s;
+    max-width: 100%;
+}
+
+._fixed {
+  overflow: hidden;
+}
+
+
+
+
+
+@media(max-width: 1439px) {
+
+}
+
+@media (max-width: 1280px){
+
+
+}
+
+@media (max-width: 991px){
+    
+}
+
+@media (max-width: 767px) {
+
+  
+}
+
+@media (max-width: 480px) {
+
+    
+}
