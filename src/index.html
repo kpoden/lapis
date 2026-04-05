@@ -2,949 +2,1530 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="images/favicon/site.webmanifest">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js"
-    integrity="sha512-gloNJjJNXOqLPOVxOJ/Sg9VN4jSPZpDdEQC+CDP0TczZ6OaOk0Ru1daFEOT/XAJY7fYABwFWVRXOx4HMFr6+lA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js"
+        integrity="sha512-gloNJjJNXOqLPOVxOJ/Sg9VN4jSPZpDdEQC+CDP0TczZ6OaOk0Ru1daFEOT/XAJY7fYABwFWVRXOx4HMFr6+lA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <title>Студия веб-разработки Lapis Dev</title>
+    <title>Студия веб-разработки Lapis Dev</title>
 
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="container header__inner">
-      <!-- Логотип с ссылкой на главную -->
-      <a href="/" class="header__logo logo" aria-label="На главную">
-        <img src="images/main/header/logo.png" alt="Веб-студия Lapis Dev" style="max-width: 300px;">
-      </a>
-      <nav class="header__nav" aria-label="Основная навигация">
-        <ul>
-          <li><a class="dropdown-link" href="">Услуги</a></li>
-          <li><a href="">Портфолио</a></li>
-          <li><a href="">Цены</a></li>
-          <li><a href="">О компании</a></li>
-          <li><a href="">Контакты</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+        <div class="container header__inner">
+            <!-- Логотип с ссылкой на главную -->
+            <a href="/" class="header__logo logo" aria-label="На главную">
+                <img src="images/main/header/logo.png" alt="Веб-студия Lapis Dev" style="max-width: 300px;">
+            </a>
+            <nav class="header__nav" aria-label="Основная навигация">
+                <ul>
+                    <li class="dropdown-link">
+                        <a  data-scroll="services">Услуги</a>
 
-      <div class="header__contacts">
-        <button class="btn header__btn"><span>Связаться с нами</span></button>
-      </div>
-    </div>
+                        <div class="dropdown-wrap">
+                            <a class="" data-scroll="support">Поддержка и доработки</a>
+                            <a class="" data-scroll="dev">Разработка сайта под ключ</a>
+                            <a class="" data-scroll="seo">SEO-оптимизация</a>
+                            <a class="" data-scroll="safety">Производительность и безопасность</a>
+                        </div>
+                    
+                    </li>
+                    <li><a data-scroll="whywe">Почему выбирают нас</a></li>
+                    <li><a data-scroll="cases">Портфолио</a></li>
+                    <li><a data-scroll="reviews">Отзывы</a></li>
+                </ul>
+            </nav>
 
-  </header>
-
-  <main>
-
-    <section class="hero" aria-labelledby="main-heading">
-      <div class="hero__slider swiper">
-        <div class="swiper-wrapper">
-          <div class="hero__slide swiper-slide">
-            <img src="images/main/hero/bpbg.jpg" alt="" class="hero__bg">
-            <div class="hero__inner">
-              <div class="hero__content">
-                <div class="hero__decor_1"></div>
-                <h1 class="hero__title">Создаем современные сайты для вашего бизнеса</h1>
-                <p class="hero__text">
-                  От&nbsp;лендингов до&nbsp;сложных веб-приложений&nbsp;&mdash; мы&nbsp;реализуем любые идеи
-                  с&nbsp;учетом последних трендов веб-разработки.
-                </p>
-                <button class="hero__btn btn"><span>Получить консультацию</span></button>
-              </div>
-
-              <div class="hero__img">
-                <lottie-player src="assets/lottie/website.json" background="transparent" speed="0.5"
-                  class="hero__animation" style="width: 600px; height: 800px;" loop autoplay>
-                </lottie-player>
-              </div>
+            <div class="header__contacts">
+                <button class="btn header__btn" data-modal="callback" data-header="Связаться с нами"><span>Связаться с нами</span></button>
             </div>
-          </div>
-
-          <div class="hero__slide swiper-slide">
-            <img src="images/main/hero/bg10.jpg" alt="" class="hero__bg">
-            <div class="hero__inner" style="flex-direction: row-reverse;">
-              <div class="hero__content">
-                <div class="hero__decor_1"></div>
-                <h1 class="hero__title">Поддержка и доработки для Вашего сайта</h1>
-                <p class="hero__text">Любые доработки, интеграции и улучшения для Вашего сайта для повышения его
-                  эффективности и увеличения продаж.</p>
-                <div class="hero__buttons">
-                  <button class="hero__btn btn"><span>Узнать подробности</span></button>
-                  <div class="price-label">от 2190 руб./час</div>
-                </div>
-              </div>
-
-              <div class="hero__img">
-                <lottie-player src="assets/lottie/tech.json" background="transparent" speed="0.5"
-                  class="hero__animation" style="width: 600px; height: 900px;" loop autoplay>
-                </lottie-player>
-              </div>
-            </div>
-          </div>
-
-          <div class="hero__slide swiper-slide">
-            <img src="images/main/hero/bg8.jpg" alt="" class="hero__bg">
-            <div class="hero__inner">
-              <div class="hero__content">
-                <div class="hero__decor_1"></div>
-                <h1 class="hero__title">Разработка <br> сайта под ключ</h1>
-                <p class="hero__text">Современный сайт для бизнеса от Вашей идеи и до нашей реализации и полной
-                  технической поддержки.</p>
-                <button class="hero__btn btn"><span>Заказать проект</span></button>
-              </div>
-
-              <div class="hero__img">
-                <lottie-player src="assets/lottie/dev.json" background="transparent" speed="0.5" class="hero__animation"
-                  style="width: 500px; height: 600px;" loop autoplay>
-                </lottie-player>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Блок услуг -->
-
-    <section class="services" aria-labelledby="services-heading">
-      <div class="container">
-        <div class="section-title-wrap">
-          <span class="header__decor_1" data-index="1"></span>
-          <h2 id="services-heading" class="section-title">
-            Наши услуги
-          </h2>
         </div>
 
-        <div class="services__tabs">
-          <div class="services__tab btn" data-tab="support"><span>Поддержка и доработки</span></div>
-          <div class="services__tab btn" data-tab="dev"><span>Разработка сайта под ключ</span></div>
-          <div class="services__tab btn" data-tab="seo"><span>SEO-оптимизация</span></div>
-          <div class="services__tab btn" data-tab="safety"><span>Производительность и безопасность</span></div>
-        </div>
+    </header>
 
-        <div class="services__list">
+    <main>
 
-          <div class="services__item service opened" data-tab="support" id="support">
-
-            <div class="sevices__main-header">
-              <h3>Поддержка и доработки</h3>
-              <span class="serv__decor"></span>
-            </div>
-            <div class="service__text">
-              <div class="service__text-inner">
-                <strong>Уже есть сайт и нужна поддержка?</strong> <br><br>
-                Если хотите сделать свой сайт еще эффективнее и удобнее мы можем выполнить любые работы по Вашему сайту!
-                <br><br>
-
-                <span>Вот несколько примеров работы для улучшения Вашего сайта:</span>
-              </div>
-            </div>
-            <div class="service__content-wrap">
-              <div class="service__content">
-                <div class="service__row">
-                <div class="service__techs">
-
-                  <div class="service__steps">
-                    <ul>
-                      <li>
-                        <span class="service__step-title">Создание новых страниц и разделов</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">Добавление нового функционала сайта и доработка
-                          существующего</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">Перенос сайта с одной CMS на другую </span>
-                        <span class="service__step-text">Например из Wordpress на Битрикс с сохранением дизайна и
-                          функционала</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">Настройка обмена с сайтом </span>
-                        <span class="service__step-text">С 1С-Предприятием, Мой склад и другими системами учета</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">Реализация обратной связи </span>
-                        <span class="service__step-text">С посетителями сайта через заявки, чаты, Telegram, E-mail и
-                          др.</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">Внедрение эквайринга на сайт</span>
-                        <span class="service__step-text">ЮКасса, Cloudpayments, Т-Банк, Сбер и др.</span>
-                      </li>
-
-                    </ul>
-                  </div>
-
-
-                  <div class="service__prices">
-                    <div class="service__prices-title">Стоимость:</div>
-                    <div class="service__prices-price">
-                      <span class="cur-price">от 2190 руб./час</span>
-                      <span class="old-price">от 3190 руб./час</span>
-                    </div>
-
-                    <span class="footnote">* при заказе от 10 часов работ</span>
-                  </div>
-                </div>
-
-
-                <div class="service__techs">
-                  <div class="service__steps">
-                    <ul>
-
-                      <li>
-                        <span class="service__step-title">Внедрение и настройка служб доставки</span>
-                        <span class="service__step-text">СДЕК, Boxberry и др. - расчет стоимости, выбор ПВЗ, отправка
-                          заявки на отправку</span>
-                      <li>
-                        <span class="service__step-title">Интеграция с CRM-системами</span>
-                        <span class="service__step-text">Настройка синхронизации заявок с сайта с такими CRM как
-                          Bitrix24, AmoCRM, RetailCRM и другими.</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">Интеграция с сервисами email-рассылок</span>
-                        <span class="service__step-text">Подключение и настройка форм подписки для сервисов вроде
-                          UniSender, SendPulse, MailChimp.</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">Настройка автоматических задач (Cron)</span>
-                        <span class="service__step-text">Запуск по расписанию скриптов для выгрузки отчетов, отправки
-                          уведомлений, обновления каталога и т.д.</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">Оптимизация админки сайта.</span>
-                        <span class="service__step-text">Более удобное управление сайтом для админов и
-                          контент-менеджеров</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">Перенос сайта на другой хостинг</span>
-                      </li>
-                      <li>
-                        <span class="service__step-title">И другие работы по Вашему сайту</span>
-                      </li>
-                    </ul>
-                    </h4>
-                  </div>
-
-                </div>
-              </div>
-              <div class="service__cta">
-                <div class="service__cta-content">
-                  <p>Нужен сайт, который приносит клиентов? </p>
-                  <span>Оставьте заявку, и мы предложим решение под ваш бизнес!</span>
-                  <button class="btn"><span>Оставить заявку</span></button>
-                </div>
-              </div>
-            </div>
-              
-
-              <div class="service__show-more btn" data-tab="support">
-                <span>Свернуть</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="services__item service" data-tab="dev" id="dev">
-            <div class="sevices__main-header">
-              <h3>Разработка сайта под ключ</h3>
-              <span class="serv__decor"></span>
-            </div>
-            <div class="service__text">
-              <div class="service__text-inner">
-                <strong>Создание сайтов под ключ — от разработки дизайна до наполнения страниц и технической
-                  поддержки.</strong> <br><br>
-                Сайты любой сложности с нуля, и доработка существующих с учетом актуальных потребностей вашего бизнеса.
-              </div>
-            </div>
-
-
-            <div class="service__content-wrap">
-              <div class="service__content">
-                <div class="service__row">
-                  <div class="service__types">
-                    <ul class="service__list">
-                      <li class="service__item">
-                        <div class="service__item-title"><span>Лендинги</span></div>
-                        <div class="service__item-text"><span>одностраничные сайты для быстрого привлечения клиентов и
-                            продаж.</div>
-                      </li>
-                      <li class="service__item">
-                        <div class="service__item-title"><span>Корпоративные сайты</span></div>
-                        <div class="service__item-text"><span>презентация компании, услуг и преимуществ для повышения
-                            доверия.</span></div>
-                      </li>
-                      <li class="service__item">
-                        <div class="service__item-title"><span>Интернет-магазины</span></div>
-                        <div class="service__item-text"><span>удобная платформа для онлайн-продаж с интеграцией платежей
-                            и CRM.</span></div>
-                      </li>
-                      <li class="service__item">
-                        <div class="service__item-title"><span>Сайты-каталоги</span></div>
-                        <div class="service__item-text"><span>удобный поиск товаров/услуг без корзины, подходит для
-                            B2B.</span></div>
-                      </li>
-                      <li class="service__item">
-                        <div class="service__item-title"><span>Сервисные платформы</span></div>
-                        <div class="service__item-text"><span>онлайн-запись, личные кабинеты, сложные
-                            веб-приложения.</span></div>
-                      </li>
-                    </ul>
-
-                    <div class="service__prices">
-                      <div class="service__prices-title">Стоимость:</div>
-                      <div class="service__prices-price"><span class="cur-price">От 30 000 рублей</span></div>
-
-                      <span class="footnote">* зависит от формата сайта, для более подробной информации оставьте заявку
-                        или свяжитесь с нами одним из способов указанных в разделе Контакты</span>
-                    </div>
-
-
-                  </div>
-                  <div class="service__techs">
-                    <div class="service__steps">
-                      <h4>Как очень просто получить готовый сайт для Вашего бизнеса? <br> Ответ прост - <span
-                          style="text-decoration: underline;">обращайтесь к нам!</span> </h4>
-
-
-                      <div class="service__steps-title">Мы сделаем все за Вас по этапам:</div>
-                      <ol>
-                        <li>
-                          <span class="service__step-title">Бесплатная консультация</span>
-                          <span class="service__step-text">Выясним Ваши потребности, предложим варианты реализации
-                            проекта, подберем решение под Ваш бюджет.</span>
-                        </li>
-                        <li>
-                          <span class="service__step-title">Разработка ТЗ</span>
-                          <span class="service__step-text">Определим цели, путь пользователя, структуру сайта, подберем
-                            подходящие технологии для фронтэнда и удобную CMS (систему управления сайтом).</span>
-                        </li>
-                        <li>
-                          <span class="service__step-title">Дизайн</span>
-                          <span class="service__step-text">Подберем современный продающий дизайн или возьмем Ваш макет,
-                            если такой уже есть</span>
-                        </li>
-                        <li>
-                          <span class="service__step-title">Верстка</span>
-                          <span class="service__step-text">Разработаем отзывчивую кроссбраузерную верстку под Ваш
-                            проект, по ходу можем вносить правки и изменения для того чтобы проект выглядел именно так,
-                            как нужно Вам.</span>
-                        </li>
-                        <li>
-                          <span class="service__step-title">Создание тестового сайта</span>
-                          <span class="service__step-text">Делаем натяжку на CMS на тестовом домене, для проверки работы
-                            сайта и удобства админки. Находимся на связи, получаем обратную связь, вносим изменения если
-                            нужно.</span>
-                        </li>
-                        <li>
-                          <span class="service__step-title">Подключение нужных сервисов</span>
-                          <span class="service__step-text">Подключение систем аналитики (Яндекс, Calltouch и др.),
-                            настройка обмена с 1С-Предприятием, подключение систем доставок и эквайринга.</span>
-                        </li>
-                        <li>
-                          <span class="service__step-title">Запуск в работу</span>
-                          <span class="service__step-text">Переносим сайт на рабочий домен/хостинг и открываем для
-                            поисковых систем, настраиваем SSL-сертификаты и получаем первые результаты!</span>
-                        <li>
-                          <span class="service__step-title">Сопровождение</span>
-                          <span class="service__step-text">Настраиваем SEO для сайта, резевное копирование, обновления,
-                            доработки и тех. поддержку.</span>
-                        </li>
-                      </ol>
-                      </h4>
-                    </div>
-
-                  </div>
-                </div>
-                <div class="service__cta">
-                  <div class="service__cta-content">
-                    <p>Нужен сайт, который приносит клиентов? </p>
-                    <span>Оставьте заявку, и мы предложим решение под ваш бизнес!</span>
-                    <button class="btn"><span>Оставить заявку</span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="service__show-more btn" data-tab="dev">
-              <span>Показать больше</span>
-            </div>
-          </div>
-
-          
-
-        </div>
-
-      </div>
-    </section>
-
-    
-    <section class="whywe" aria-labelledby="services-heading" id="whywe">
-        <div class="container">
-            <div class="section-title-wrap">
-                <span class="header__decor_1"></span>
-                <h2 id="services-heading" class="section-title">
-                    Почему выбирают нас
-                </h2>
-            </div>
-
-            <div class="whywe__text">
-                <div class="whywe__text-inner">
-                    <strong>Мы команда разработчиков с совокупным опытом более 30 лет. <br>
-                    Наши клиенты обычно остаются с нами навсегда.</strong> <br><br>
-                    Мы прекрасно знаем как решать сложные проблемы <br> и всегда доводим работу до конца. 
-                </div>
-            </div>
-
-            <div class="whywe__main">
-                <div class="whywe__title">Наши преимущества</div>
-
-                <div class="whywe__list">
-                    <div class="whywe__item">
-                        <div class="whywe__item-title"><span class="whywe__item-num">1.</span>  Профессионализм. </div>
-                        <div class="whywe__item-text">Мы давно в бизнесе и знаем свою работу, нам можно доверять.</div>
-                    </div>
-                    <div class="whywe__item">
-                        <div class="whywe__item-title"><span class="whywe__item-num">2.</span>Прозрачность и отчётность. </div>
-                        <div class="whywe__item-text">Вы всегда знаете, за что платите. Предоставляем детальные отчёты о проделанной работе: сколько времени заняла задача, что именно сделано и какой результат. </div>
-                    </div>
-                    <div class="whywe__item">
-                        <div class="whywe__item-title"><span class="whywe__item-num">3.</span>Системный подход. </div>
-                        <div class="whywe__item-text">Не латаем дыры, а выстраиваем системную работу. Анализируем проект, выявляем узкие места и предлагаем решения, которые сделают ваш сайт стабильнее и быстрее.</div>
-                    </div>
-                    <div class="whywe__item">
-                        <div class="whywe__item-title"><span class="whywe__item-num">4.</span>Оперативность. </div>
-                        <div class="whywe__item-text">Задачи закрываем быстро и в срок, с нами всегда можно связаться при наличии проблем с сайтом, отвечаем в течение часа</div>
-                    </div>
-                    <div class="whywe__item">
-                        <div class="whywe__item-title"><span class="whywe__item-num">5.</span>Понятный диалог без воды. </div>
-                        <div class="whywe__item-text">Мы умеем переводить с технического на человеческий. Объясняем сложные вещи простым языком и всегда на связи по любым вопросам.</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="advantages" aria-labelledby="services-heading" id="advantages">
-        <div class="container">
-
-            <div class="advantages__list">
-                <div class="advantages__item">
-                    <div class="advantages__num">
-                        <span>7</span> 
-                        лет
-                    </div>
-                    <div class="advantages__text">экспертной работы на рынке IT</div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__num">
-                        <span>80+ </span>
-                        клиентов
-                    </div>
-                    <div class="advantages__text">от ИП до крупных компаний, которые нам доверяют</div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__num">
-                        <span>3</span> 
-                        года
-                    </div>
-                    <div class="advantages__text">средний срок на который клиенты остаются с нами</div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__num">
-                        <span>200+</span>
-                        проектов
-                    </div>
-                    <div class="advantages__text">завершено, от лэндингов до масштабных сервисов</div>
-                </div>
-            </div>
-   
-        </div>
-    </section>
-
-    <section class="cases" aria-labelledby="services-heading" id="cases">
-        <div class="container">
-            <div class="section-title-wrap">
-                <span class="header__decor_1"></span>
-                <h2 id="services-heading" class="section-title">
-                    Портфолио
-                </h2>
-            </div>
-
-            <div class="cases__content">
-
-                <div class="cases__text">
-
-                </div>
-
-                <div class="cases__slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
+        <section class="hero" aria-labelledby="main-heading">
+            <div class="hero__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="hero__slide swiper-slide">
+                        <img src="images/main/hero/bpbg.jpg" alt="" class="hero__bg">
+                        <div class="hero__inner">
+                            <div class="hero__content">
+                                <div class="hero__decor_1"></div>
+                                <h1 class="hero__title">Создаем современные сайты для вашего бизнеса</h1>
+                                <p class="hero__text">
+                                    От&nbsp;лендингов до&nbsp;сложных веб-приложений&nbsp;&mdash; мы&nbsp;реализуем
+                                    любые идеи
+                                    с&nbsp;учетом последних трендов веб-разработки.
+                                </p>
+                                <button class="hero__btn btn" data-modal="callback" data-header="Получить консультацию">
+                                    <span>Получить консультацию</span>
+                                </button>
                             </div>
 
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/1/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/1/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/1/3.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                            <div class="hero__img">
+                                <lottie-player src="assets/lottie/website.json" background="transparent" speed="0.5"
+                                    class="hero__animation" style="width: 600px; height: 800px;" loop autoplay>
+                                </lottie-player>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                                 
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
+                    <div class="hero__slide swiper-slide">
+                        <img src="images/main/hero/bg10.jpg" alt="" class="hero__bg">
+                        <div class="hero__inner" style="flex-direction: row-reverse;">
+                            <div class="hero__content">
+                                <div class="hero__decor_1"></div>
+                                <h1 class="hero__title">Поддержка и доработки для Вашего сайта</h1>
+                                <p class="hero__text">Любые доработки, интеграции и улучшения для Вашего сайта для
+                                    повышения его
+                                    эффективности и увеличения продаж.</p>
+                                <div class="hero__buttons">
+                                    <button class="hero__btn btn"><span>Узнать подробности</span></button>
+                                    <div class="price-label">от 2190 руб./час</div>
+                                </div>
                             </div>
 
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/2/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/2/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/2/3.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                            <div class="hero__img">
+                                <lottie-player src="assets/lottie/tech.json" background="transparent" speed="0.5"
+                                    class="hero__animation" style="width: 600px; height: 900px;" loop autoplay>
+                                </lottie-player>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                                 
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
+                    <div class="hero__slide swiper-slide">
+                        <img src="images/main/hero/bg8.jpg" alt="" class="hero__bg">
+                        <div class="hero__inner">
+                            <div class="hero__content">
+                                <div class="hero__decor_1"></div>
+                                <h1 class="hero__title">Разработка <br> сайта под ключ</h1>
+                                <p class="hero__text">Современный сайт для бизнеса от Вашей идеи и до нашей реализации и
+                                    полной
+                                    технической поддержки.</p>
+                                <button class="hero__btn btn"><span>Заказать проект</span></button>
                             </div>
 
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/3/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/3/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/3/3.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                                 
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
-                            </div>
-
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/4/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/4/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/4/3.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                                 
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
-                            </div>
-
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/5/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/5/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/5/3.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                                 
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
-                            </div>
-
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/6/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/6/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/6/3.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                                 
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
-                            </div>
-
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/7/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/7/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/7/3.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                                 
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
-                            </div>
-
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/8/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/8/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/8/3.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                                 
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
-                            </div>
-
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/9/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/9/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/9/3.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-                        </div>
-
-                        <div class="case__slide swiper-slide">
-                            <span class="case__labels">
-                                <div class="case__label">1С-Битрикс</div>
-                                <div class="case__label">Тех. поддержка</div>
-                                 
-                            </span>
-
-                            <div class="case__descr">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur nobis laboriosam repellendus sequi ratione quos architecto.
-                            </div>
-
-                            <div class="case__inner-slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/10/1.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/10/2.png" alt="">
-                                    </div>
-                                    <div class="case__inner-slide swiper-slide">
-                                        <img src="images/portfolio/10/3.png" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                            <div class="hero__img">
+                                <lottie-player src="assets/lottie/dev.json" background="transparent" speed="0.5"
+                                    class="hero__animation" style="width: 500px; height: 600px;" loop autoplay>
+                                </lottie-player>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="reviews" aria-labelledby="services-heading" id="reviews">
-        <div class="container">
-            <div class="section-title-wrap">
-                <span class="header__decor_1"></span>
-                <h2 id="services-heading" class="section-title">
-                    Отзывы
-                </h2>
-            </div>
 
-            <div class="reviews__wrapper">
+        <!-- Блок услуг -->
 
-                <div class="reviews__left">
-                    <div class="reviews__title">
-                        Наши клиенты — это компании из разных сфер: от производства до IT. Каждый отзыв для нас важен, ведь это реальный опыт работы с нами.
-                    </div>
-                    <div class="reviews__text">
-                        Нам доверяют не просто создание сайтов — нам доверяют развитие своего бизнеса. Мы становимся частью команды клиента, погружаемся в его задачи и предлагаем решения, которые действительно работают. Именно поэтому большинство заказчиков обращаются к нам снова и рекомендуют нас другим.
-                    </div>
-                    <div class="reviews__img">
-                        <img src="" alt="">
+        <section class="services" aria-labelledby="services-heading" id="services">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="header__decor_1" data-index="1"></span>
+                    <h2 id="services-heading" class="section-title">
+                        Наши услуги
+                    </h2>
+                </div>
+
+                <div class="services__tabs">
+                    <div class="services__tab btn" data-tab="support"><span>Поддержка и доработки</span></div>
+                    <div class="services__tab btn" data-tab="dev"><span>Разработка сайта под ключ</span></div>
+                    <div class="services__tab btn" data-tab="seo"><span>SEO-оптимизация</span></div>
+                    <div class="services__tab btn" data-tab="safety"><span>Производительность и безопасность</span>
                     </div>
                 </div>
-                <div class="reviews__right">
-                    <div class="reviews__slider swiper">
+
+                <div class="services__list">
+
+                    <div class="services__item service opened" data-tab="support" id="support">
+
+                        <div class="sevices__main-header">
+                            <h3>Поддержка и доработки</h3>
+                            <span class="serv__decor"></span>
+                        </div>
+                        <div class="service__text">
+                            <div class="service__text-inner">
+                                <strong>Уже есть сайт и нужна поддержка?</strong> <br><br>
+                                Если хотите сделать свой сайт еще эффективнее и удобнее мы можем выполнить любые работы
+                                по Вашему сайту!
+                                <br><br>
+
+                                <span>Вот несколько примеров работы для улучшения Вашего сайта:</span>
+                            </div>
+                        </div>
+                        <div class="service__content-wrap">
+                            <div class="service__content">
+                                <div class="service__row">
+                                    <div class="service__techs">
+                                        <div class="service__steps">
+                                            <ul>
+                                                <li>
+                                                    <span class="service__step-title">Создание новых страниц и
+                                                        разделов</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Добавление нового функционала
+                                                        сайта и доработка
+                                                        существующего</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Перенос сайта с одной CMS на
+                                                        другую </span>
+                                                    <span class="service__step-text">Например из Wordpress на Битрикс с
+                                                        сохранением дизайна и
+                                                        функционала</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Настройка обмена с сайтом </span>
+                                                    <span class="service__step-text">С 1С-Предприятием, Мой склад и
+                                                        другими системами учета</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Реализация обратной связи </span>
+                                                    <span class="service__step-text">С посетителями сайта через заявки,
+                                                        чаты, Telegram, E-mail и
+                                                        др.</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Внедрение эквайринга на
+                                                        сайт</span>
+                                                    <span class="service__step-text">ЮКасса, Cloudpayments, Т-Банк, Сбер
+                                                        и др.</span>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+
+
+                                        <div class="service__prices">
+                                            <div class="service__prices-title">Стоимость:</div>
+                                            <div class="service__prices-price">
+                                                <span class="cur-price">от 2190 руб./час</span>
+                                                <span class="old-price">от 3190 руб./час</span>
+                                            </div>
+
+                                            <span class="footnote">* при заказе от 10 часов работ</span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="service__techs">
+                                        <div class="service__steps">
+                                            <ul>
+
+                                                <li>
+                                                    <span class="service__step-title">Внедрение и настройка служб
+                                                        доставки</span>
+                                                    <span class="service__step-text">СДЕК, Boxberry и др. - расчет
+                                                        стоимости, выбор ПВЗ, отправка
+                                                        заявки на отправку</span>
+                                                <li>
+                                                    <span class="service__step-title">Интеграция с CRM-системами</span>
+                                                    <span class="service__step-text">Настройка синхронизации заявок с
+                                                        сайта с такими CRM как
+                                                        Bitrix24, AmoCRM, RetailCRM и другими.</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Интеграция с сервисами
+                                                        email-рассылок</span>
+                                                    <span class="service__step-text">Подключение и настройка форм
+                                                        подписки для сервисов вроде
+                                                        UniSender, SendPulse, MailChimp.</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Настройка автоматических задач
+                                                        (Cron)</span>
+                                                    <span class="service__step-text">Запуск по расписанию скриптов для
+                                                        выгрузки отчетов, отправки
+                                                        уведомлений, обновления каталога и т.д.</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Оптимизация админки сайта.</span>
+                                                    <span class="service__step-text">Более удобное управление сайтом для
+                                                        админов и
+                                                        контент-менеджеров</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Перенос сайта на другой
+                                                        хостинг</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">И другие работы по Вашему
+                                                        сайту</span>
+                                                </li>
+                                            </ul>
+                                            </h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="service__cta">
+                                    <div class="service__cta-content">
+                                        <p>Нужен сайт, который приносит клиентов? </p>
+                                        <span>Оставьте заявку, и мы предложим решение под ваш бизнес!</span>
+                                        <button class="btn"  data-modal="callback" data-header="Оставить заявку">
+                                            <span>Оставить заявку</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="service__show-more btn" data-tab="support">
+                                <span>Свернуть</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services__item service" data-tab="dev" id="dev">
+                        <div class="sevices__main-header">
+                            <h3>Разработка сайта под ключ</h3>
+                            <span class="serv__decor"></span>
+                        </div>
+                        <div class="service__text">
+                            <div class="service__text-inner">
+                                <strong>Создание сайтов под ключ — от разработки дизайна до наполнения страниц и
+                                    технической
+                                    поддержки.</strong> <br><br>
+                                Сайты любой сложности с нуля, и доработка существующих с учетом актуальных потребностей
+                                вашего бизнеса.
+                            </div>
+                        </div>
+
+
+                        <div class="service__content-wrap">
+                            <div class="service__content">
+                                <div class="service__row">
+                                    <div class="service__types">
+                                        <ul class="service__list">
+                                            <li class="service__item">
+                                                <div class="service__item-title"><span>Лендинги</span></div>
+                                                <div class="service__item-text"><span>одностраничные сайты для быстрого
+                                                        привлечения клиентов и
+                                                        продаж.</div>
+                                            </li>
+                                            <li class="service__item">
+                                                <div class="service__item-title"><span>Корпоративные сайты</span></div>
+                                                <div class="service__item-text"><span>презентация компании, услуг и
+                                                        преимуществ для повышения
+                                                        доверия.</span></div>
+                                            </li>
+                                            <li class="service__item">
+                                                <div class="service__item-title"><span>Интернет-магазины</span></div>
+                                                <div class="service__item-text"><span>удобная платформа для
+                                                        онлайн-продаж с интеграцией платежей
+                                                        и CRM.</span></div>
+                                            </li>
+                                            <li class="service__item">
+                                                <div class="service__item-title"><span>Сайты-каталоги</span></div>
+                                                <div class="service__item-text"><span>удобный поиск товаров/услуг без
+                                                        корзины, подходит для
+                                                        B2B.</span></div>
+                                            </li>
+                                            <li class="service__item">
+                                                <div class="service__item-title"><span>Сервисные платформы</span></div>
+                                                <div class="service__item-text"><span>онлайн-запись, личные кабинеты,
+                                                        сложные
+                                                        веб-приложения.</span></div>
+                                            </li>
+                                        </ul>
+
+                                        <div class="service__prices">
+                                            <div class="service__prices-title">Стоимость:</div>
+                                            <div class="service__prices-price"><span class="cur-price">От 30 000
+                                                    рублей</span></div>
+
+                                            <span class="footnote">* зависит от формата сайта, для более подробной
+                                                информации оставьте заявку
+                                                или свяжитесь с нами одним из способов указанных в разделе
+                                                Контакты</span>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="service__techs">
+                                        <div class="service__steps">
+                                            <h4>Как очень просто получить готовый сайт для Вашего бизнеса? <br> Ответ
+                                                прост - <span style="text-decoration: underline;">обращайтесь к
+                                                    нам!</span> </h4>
+
+
+                                            <div class="service__steps-title">Мы сделаем все за Вас по этапам:</div>
+                                            <ol>
+                                                <li>
+                                                    <span class="service__step-title">Бесплатная консультация</span>
+                                                    <span class="service__step-text">Выясним Ваши потребности, предложим
+                                                        варианты реализации
+                                                        проекта, подберем решение под Ваш бюджет.</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Разработка ТЗ</span>
+                                                    <span class="service__step-text">Определим цели, путь пользователя,
+                                                        структуру сайта, подберем
+                                                        подходящие технологии для фронтэнда и удобную CMS (систему
+                                                        управления сайтом).</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Дизайн</span>
+                                                    <span class="service__step-text">Подберем современный продающий
+                                                        дизайн или возьмем Ваш макет,
+                                                        если такой уже есть</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Верстка</span>
+                                                    <span class="service__step-text">Разработаем отзывчивую
+                                                        кроссбраузерную верстку под Ваш
+                                                        проект, по ходу можем вносить правки и изменения для того чтобы
+                                                        проект выглядел именно так,
+                                                        как нужно Вам.</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Создание тестового сайта</span>
+                                                    <span class="service__step-text">Делаем натяжку на CMS на тестовом
+                                                        домене, для проверки работы
+                                                        сайта и удобства админки. Находимся на связи, получаем обратную
+                                                        связь, вносим изменения если
+                                                        нужно.</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Подключение нужных сервисов</span>
+                                                    <span class="service__step-text">Подключение систем аналитики
+                                                        (Яндекс, Calltouch и др.),
+                                                        настройка обмена с 1С-Предприятием, подключение систем доставок
+                                                        и эквайринга.</span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">Запуск в работу</span>
+                                                    <span class="service__step-text">Переносим сайт на рабочий
+                                                        домен/хостинг и открываем для
+                                                        поисковых систем, настраиваем SSL-сертификаты и получаем первые
+                                                        результаты!</span>
+                                                <li>
+                                                    <span class="service__step-title">Сопровождение</span>
+                                                    <span class="service__step-text">Настраиваем SEO для сайта, резевное
+                                                        копирование, обновления,
+                                                        доработки и тех. поддержку.</span>
+                                                </li>
+                                            </ol>
+                                            </h4>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="service__cta">
+                                    <div class="service__cta-content">
+                                        <p>Нужен сайт, который приносит клиентов? </p>
+                                        <span>Оставьте заявку, и мы предложим решение под ваш бизнес!</span>
+                                        <button class="btn" data-modal="callback" data-header="Оставить заявку">
+                                            <span>Оставить заявку</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="service__show-more btn" data-tab="dev">
+                            <span>Показать больше</span>
+                        </div>
+                    </div>
+
+                    <div class="services__item service" data-tab="seo" id="seo">
+
+                        <div class="sevices__main-header">
+                            <h3>Аналитика и SEO</h3>
+                            <span class="serv__decor"></span>
+                        </div>
+                        <div class="service__text">
+                            <div class="service__text-inner">
+                                <strong>Уже есть сайт и нужна SEO-оптимизация?</strong><br><br>
+                                Если хотите, чтобы Ваш сайт находили в поиске, загружался быстрее и приносил больше
+                                заявок —
+                                мы выполним любые работы по SEO и улучшению контента!<br><br>
+                                <span>Вот несколько примеров работ для продвижения Вашего сайта:</span>
+                            </div>
+                        </div>
+                        <div class="service__content-wrap">
+                            <div class="service__content">
+                                <div class="service__row">
+                                    <div class="service__techs">
+                                        <div class="service__steps">
+                                            <ul>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Интеграция с системами сквозной аналитики
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Настройка передачи данных в Calltouch, Roistat, UIS и другие
+                                                        платформы.
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Технический SEO-аудит (Technical SEO)
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Комплексная проверка сайта на ошибки, мешающие корректной
+                                                        индексации и ранжированию. Выявление и исправление критических
+                                                        замечаний.
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Ускорение и оптимизация производительности
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Повышение скорости загрузки страниц — ключевой фактор
+                                                        ранжирования и удобства пользователей.
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Работа с индексацией
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Настройка файлов robots.txt и sitemap.xml, устранение ошибок
+                                                        сканирования и дублирующего контента, настройка корректных
+                                                        редиректов (301, 302).
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Настройка и ведение редиректов
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Исправление битых ссылок (ошибка 404), перенос страниц со старых
+                                                        адресов на новые с сохранением SEO-веса через 301 редирект.
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Консультации по юзабилити (UI/UX)
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Рекомендации по улучшению интерфейса и пользовательского опыта
+                                                        на основе данных аналитики и лучших практик.
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                            <div class="service__prices">
+                                                <div class="service__prices-title">Стоимость:</div>
+                                                <div class="service__prices-price">
+                                                    <span class="cur-price">от 2190 руб./час</span>
+                                                    <span class="old-price">от 3190 руб./час</span>
+                                                </div>
+                                                <span class="footnote">* при заказе от 10 часов работ</span>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="service__techs">
+                                        <div class="service__steps">
+                                            <ul>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Внедрение структурированной разметки (Schema.org)
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Добавление микроразметки для улучшения отображения страниц в
+                                                        поисковой выдаче (расширенные сниппеты, хлебные крошки,
+                                                        информация о товарах и организациях).
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        SEO-оптимизация контента и мета-тегов
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Написание и корректировка заголовков (Title), описаний
+                                                        (Description), заголовков H1-H6 и текстов для повышения
+                                                        релевантности страниц поисковым запросам.
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Оптимизация изображений
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Сжатие и уменьшение веса графики без потери качества,
+                                                        простановка ALT-тегов и тегов TITLE для картинок
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Кросс-браузерная и кроссплатформенная адаптация
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Проверка и обеспечение корректного отображения и работы
+                                                        сайта на всех устройствах (ПК, планшеты, смартфоны) и во
+                                                        всех популярных браузерах.
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Локальное SEO (Local SEO)
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Регистрация и настройка профиля компании в Google Мой бизнес
+                                                        (Google My Business) и Яндекс.Справочнике для повышения
+                                                        видимости в локальных поисковых запросах.
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Интеграция с системами веб-аналитики
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Установка и тонкая настройка целей и сквозной аналитики в
+                                                        Яндекс.Метрике и Google Analytics для отслеживания
+                                                        эффективности SEO-усилий.
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Мониторинг позиций и отчетность
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        Отслеживание динамики позиций сайта по ключевым запросам и
+                                                        предоставление понятных отчетов о проделанной работе и
+                                                        достигнутых результатах.
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="service__cta">
+                                    <div class="service__cta-content">
+                                        <p>Нужен оптимизация сайта? </p>
+                                        <span>Оставьте заявку, и мы бесплатно проконсультируем Вас и разработаем план работ!</span>
+                                        <button class="btn" data-modal="callback" data-header="Оставить заявку">
+                                            <span>Оставить заявку</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__show-more btn" data-tab="seo">
+                            <span>Показать больше</span>
+                        </div>
+                    </div>
+
+                    <div class="services__item service" data-tab="safety" id="safety">
+
+                        <div class="sevices__main-header">
+                            <h3>Производительность и безопасность</h3>
+                            <span class="serv__decor"></span>
+                        </div>
+                        <div class="service__text">
+                            <div class="service__text-inner">
+                                <strong>Уже есть сайт и нужна SEO-оптимизация?</strong><br><br>
+                                Если хотите, чтобы Ваш сайт находили в поиске, загружался быстрее и приносил больше
+                                заявок —
+                                мы выполним любые работы по SEO и улучшению контента!<br><br>
+                                <span>Вот несколько примеров работ для продвижения Вашего сайта:</span>
+                            </div>
+                        </div>
+                        <div class="service__content-wrap">
+                            <div class="service__content">
+                                <div class="service__row">
+                                    <div class="service__techs">
+                                        <div class="service__steps">
+                                            <ul>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Оптимизация скорости загрузки сайта
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Обновление платформы сайта, обновление версии PHP, устранение возможных багов
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Установка или продление SSL-сертификатов
+                                                    </span>
+                                                </li>
+                                            </ul>
+
+                                            <div class="service__prices">
+                                                <div class="service__prices-title">Стоимость:</div>
+                                                <div class="service__prices-price">
+                                                    <span class="cur-price">от 2190 руб./час</span>
+                                                    <span class="old-price">от 3190 руб./час</span>
+                                                </div>
+                                                <span class="footnote">* при заказе от 10 часов работ</span>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="service__techs">
+                                        <div class="service__steps">
+                                            <ul>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Обеспечение безопасности сайта, защита от ботов и спама
+                                                    </span>
+                                                </li>
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Резервное копирование и восстановление сайта из бэкапа
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        o	Настройка автоматического регулярного резервного копирования
+                                                        o	Хранение копий на независимом сервере
+                                                        o	Восстановление сайта в случае поломок, вирусов и других проблем
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Диагностика сайта на наличие проблем
+                                                    </span>
+                                                    <span class="service__step-text">
+                                                        o	Настройка автоматического регулярного резервного копирования
+                                                        o	Хранение копий на независимом сервере
+                                                        o	Восстановление сайта в случае поломок, вирусов и других проблем
+                                                    </span>
+                                                </li>
+
+                                                <li>
+                                                    <span class="service__step-title">
+                                                        Мониторинг доступности (uptime)
+                                                    </span>
+
+                                                    <span class="service__step-text">
+                                                        Настройка оповещений о том, что сайт перестал быть доступен (например, через UptimeRobot или мониторинг от хостинг-провайдера).
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="service__cta">
+                                    <div class="service__cta-content">
+                                        <p>Хотите обеспечить безопасность и стабильную работу Вашего сайта? </p>
+                                        <span>Оставьте заявку или свяжитесь с нами одним из способов указанных в подвале сайта.</span>
+                                        <button class="btn" data-modal="callback" data-header="Оставить заявку">
+                                            <span>Оставить заявку</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service__show-more btn" data-tab="safety">
+                            <span>Показать больше</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+
+        <section class="whywe" aria-labelledby="services-heading" id="whywe">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="header__decor_1"></span>
+                    <h2 id="services-heading" class="section-title">
+                        Почему выбирают нас
+                    </h2>
+                </div>
+
+                <div class="whywe__text">
+                    <div class="whywe__text-inner">
+                        <strong>Мы команда разработчиков с совокупным опытом более 30 лет. <br>
+                            Наши клиенты обычно остаются с нами навсегда.</strong> <br><br>
+                        Мы прекрасно знаем как решать сложные проблемы <br> и всегда доводим работу до конца.
+                    </div>
+                </div>
+
+                <div class="whywe__main">
+                    <div class="whywe__title">Наши преимущества</div>
+
+                    <div class="whywe__list">
+                        <div class="whywe__item">
+                            <div class="whywe__item-title"><span class="whywe__item-num">1.</span> Профессионализм.
+                            </div>
+                            <div class="whywe__item-text">Мы давно в бизнесе и знаем свою работу, нам можно доверять.
+                            </div>
+                        </div>
+                        <div class="whywe__item">
+                            <div class="whywe__item-title"><span class="whywe__item-num">2.</span>Прозрачность и
+                                отчётность. </div>
+                            <div class="whywe__item-text">Вы всегда знаете, за что платите. Предоставляем детальные
+                                отчёты о проделанной работе: сколько времени заняла задача, что именно сделано и какой
+                                результат. </div>
+                        </div>
+                        <div class="whywe__item">
+                            <div class="whywe__item-title"><span class="whywe__item-num">3.</span>Системный подход.
+                            </div>
+                            <div class="whywe__item-text">Не латаем дыры, а выстраиваем системную работу. Анализируем
+                                проект, выявляем узкие места и предлагаем решения, которые сделают ваш сайт стабильнее и
+                                быстрее.</div>
+                        </div>
+                        <div class="whywe__item">
+                            <div class="whywe__item-title"><span class="whywe__item-num">4.</span>Оперативность. </div>
+                            <div class="whywe__item-text">Задачи закрываем быстро и в срок, с нами всегда можно
+                                связаться при наличии проблем с сайтом, отвечаем в течение часа</div>
+                        </div>
+                        <div class="whywe__item">
+                            <div class="whywe__item-title"><span class="whywe__item-num">5.</span>Понятный диалог без
+                                воды. </div>
+                            <div class="whywe__item-text">Мы умеем переводить с технического на человеческий. Объясняем
+                                сложные вещи простым языком и всегда на связи по любым вопросам.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="advantages" aria-labelledby="services-heading" id="advantages">
+            <div class="container">
+
+                <div class="advantages__list">
+                    <div class="advantages__item">
+                        <div class="advantages__num">
+                            <span>7</span>
+                            лет
+                        </div>
+                        <div class="advantages__text">экспертной работы на рынке IT</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__num">
+                            <span>80+ </span>
+                            клиентов
+                        </div>
+                        <div class="advantages__text">от ИП до крупных компаний, которые нам доверяют</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__num">
+                            <span>3</span>
+                            года
+                        </div>
+                        <div class="advantages__text">средний срок на который клиенты остаются с нами</div>
+                    </div>
+                    <div class="advantages__item">
+                        <div class="advantages__num">
+                            <span>200+</span>
+                            проектов
+                        </div>
+                        <div class="advantages__text">завершено, от лэндингов до масштабных сервисов</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="cases" aria-labelledby="services-heading" id="cases">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="header__decor_1"></span>
+                    <h2 id="services-heading" class="section-title">
+                        Портфолио
+                    </h2>
+                </div>
+
+                <div class="cases__content">
+
+                    <div class="cases__text">
+
+                    </div>
+
+                    <div class="cases__slider swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide review__slide">
-                                <img class="review__img" src="" alt="">
-                                <div class="review__content">
-                                    <div class="review__author">Алексей Петров</div>
-                                    <div class="review__position">Генеральный директор, ООО «ТехноМаркет»</div>
-                                    <div class="review__project">Интернет-магазин автозапчастей</div>
-                                    <div class="review__text">
-                                        Заказывали разработку интернет-магазина с нуля. Очень довольны результатом! Сайт получился быстрым, удобным для клиентов и понятным в управлении. Особенно порадовала интеграция с 1С и CRM Битрикс24 — теперь все заказы автоматически попадают в систему. Отдельное спасибо за проработку фильтров по маркам автомобилей и VIN-номеру. Продажи выросли на 40% за первые 2 месяца. Ребята реально понимают, что нужно бизнесу!
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/1/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/1/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/1/3.png" alt="">
+                                        </div>
                                     </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
                             </div>
-                            <div class="swiper-slide review__slide">
-                                <img class="review__img" src="" alt="">
-                                <div class="review__content">
-                                    <div class="review__author">Дмитрий Козлов</div>
-                                    <div class="review__position">Владелец, «Мир инструмента»</div>
-                                    <div class="review__project">Каталог товаров с фильтрацией</div>
-                                    <div class="review__text">
-                                        У нас очень специфичный товар — более 5000 позиций с кучей характеристик. Нужно было сделать удобную фильтрацию, чтобы клиенты быстро находили нужное. Разработчики справились блестяще! Сделали умный поиск, фильтры по всем параметрам, сравнение товаров. Отдельное спасибо за проработку мобильной версии — сейчас больше половины заказов идет с телефонов. Работать с командой комфортно: все сроки соблюдены, бюджет фиксированный, никаких скрытых платежей.
+
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/2/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/2/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/2/3.png" alt="">
+                                        </div>
                                     </div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
                             </div>
-                            <div class="swiper-slide review__slide">
-                                <img class="review__img" src="" alt="">
-                                <div class="review__content">
-                                    <div class="review__author">Алексей Петров</div>
-                                    <div class="review__position">Генеральный директор, ООО «ТехноМаркет»</div>
-                                    <div class="review__project">Интернет-магазин автозапчастей</div>
-                                    <div class="review__text">
-                                        Заказывали разработку интернет-магазина с нуля. Очень довольны результатом! Сайт получился быстрым, удобным для клиентов и понятным в управлении. Особенно порадовала интеграция с 1С и CRM Битрикс24 — теперь все заказы автоматически попадают в систему. Отдельное спасибо за проработку фильтров по маркам автомобилей и VIN-номеру. Продажи выросли на 40% за первые 2 месяца. Ребята реально понимают, что нужно бизнесу!
+
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/3/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/3/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/3/3.png" alt="">
+                                        </div>
                                     </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
                             </div>
-                            <div class="swiper-slide review__slide">
-                                <img class="review__img" src="" alt="">
-                                <div class="review__content">
-                                    <div class="review__author">Иван Морозов</div>
-                                    <div class="review__position">Основатель сервиса «Эко-доставка»</div>
-                                    <div class="review__project">Сервис заказа услуг</div>
-                                    <div class="review__text">
-                                        Обратился с идеей, у меня был только концепт на бумаге. Ребята помогли продумать структуру, логику работы сервиса, сделали прототип и уже потом приступили к разработке. Очень ценно, что подсказывают, как лучше, предлагают оптимальные решения. Запустились через 2,5 месяца, как и планировали. Сейчас активно развиваемся, дорабатываем функционал — команда всегда готова помочь и подсказать. Огромное спасибо за профессионализм и человеческое отношение!
+
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/4/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/4/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/4/3.png" alt="">
+                                        </div>
                                     </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
                                 </div>
                             </div>
-                            <div class="swiper-slide review__slide">
-                                <img class="review__img" src="" alt="">
-                                <div class="review__content">
-                                    <div class="review__author">Ольга Новикова</div>
-                                    <div class="review__position">Маркетолог, «Мебель-стиль»</div>
-                                    <div class="review__project">Редизайн и оптимизация интернет-магазина</div>
-                                    <div class="review__text">
-                                        Переделывали старый сайт, который уже не приносил продаж. Команда полностью переработала дизайн, улучшила юзабилити, оптимизировала скорость загрузки. Особенно порадовала работа с поведенческими факторами — проанализировали, где пользователи уходят, и исправили проблемные места. Результат: конверсия выросла в 2 раза, а поисковый трафик увеличился на 70%. Отдельное спасибо за обучение — подробно показали, как работать с административной панелью, теперь сами можем добавлять товары и акции.
+
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/5/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/5/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/5/3.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/6/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/6/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/6/3.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/7/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/7/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/7/3.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/8/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/8/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/8/3.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/9/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/9/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/9/3.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+
+                            <div class="case__slide swiper-slide">
+                                <span class="case__labels">
+                                    <div class="case__label">1С-Битрикс</div>
+                                    <div class="case__label">Тех. поддержка</div>
+
+                                </span>
+
+                                <div class="case__descr">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
+                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
+                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                </div>
+
+                                <div class="case__inner-slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/10/1.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/10/2.png" alt="">
+                                        </div>
+                                        <div class="case__inner-slide swiper-slide">
+                                            <img src="images/portfolio/10/3.png" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" aria-labelledby="services-heading" id="reviews">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="header__decor_1"></span>
+                    <h2 id="services-heading" class="section-title">
+                        Отзывы
+                    </h2>
+                </div>
+
+                <div class="reviews__wrapper">
+
+                    <div class="reviews__left">
+                        <div class="reviews__title">
+
+                            <div class="reviews__title-item">
+                                Наши клиенты — это компании из разных сфер: от сферы услуг и производства до IT.
+                            </div>
+
+                            <span class="reviews__title-decor"></span>
+
+                            <div class="reviews__title-item">
+                                Каждый отзыв для нас важен, ведь это реальный опыт работы с нами.
+                            </div>
+                        </div>
+                        <div class="reviews__text">
+                            Нам доверяют не просто создание сайтов — нам доверяют развитие своего бизнеса. Мы становимся
+                            частью команды клиента, погружаемся в его задачи и предлагаем решения, которые действительно
+                            работают. Именно поэтому большинство заказчиков обращаются к нам снова и рекомендуют нас
+                            другим.
+                        </div>
+                        <div class="reviews__img">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="reviews__right">
+                        <div class="reviews__slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide review__slide">
+
+                                    <div class="review__content">
+                                        <div class="review__meta">
+                                            <div class="review__meta-left">
+                                                <div class="review__author">Алексей Петров</div>
+                                                <div class="review__position">Генеральный директор, ООО «ТехноМаркет»
+                                                </div>
+                                            </div>
+                                            <div class="review__project">Интернет-магазин автозапчастей</div>
+                                        </div>
+                                        <div class="review__text">
+                                            Заказывали разработку интернет-магазина с нуля. Очень довольны результатом!
+                                            Сайт получился быстрым, удобным для клиентов и понятным в управлении.
+                                            Особенно порадовала интеграция с 1С и CRM Битрикс24 — теперь все заказы
+                                            автоматически попадают в систему. Отдельное спасибо за проработку фильтров
+                                            по маркам автомобилей и VIN-номеру. Продажи выросли на 40% за первые 2
+                                            месяца. Ребята реально понимают, что нужно бизнесу!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide review__slide">
+
+                                    <div class="review__content">
+                                        <div class="review__meta">
+                                            <div class="review__meta-left">
+                                                <div class="review__author">Дмитрий Козлов</div>
+                                                <div class="review__position">Владелец, «Мир инструмента»</div>
+                                            </div>
+                                            <div class="review__project">Каталог товаров с фильтрацией</div>
+                                        </div>
+                                        <div class="review__text">
+                                            У нас очень специфичный товар — более 5000 позиций с кучей характеристик.
+                                            Нужно было сделать удобную фильтрацию, чтобы клиенты быстро находили нужное.
+                                            Разработчики справились блестяще! Сделали умный поиск, фильтры по всем
+                                            параметрам, сравнение товаров. Отдельное спасибо за проработку мобильной
+                                            версии — сейчас больше половины заказов идет с телефонов. Работать с
+                                            командой комфортно: все сроки соблюдены, бюджет фиксированный, никаких
+                                            скрытых платежей.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide review__slide">
+
+                                    <div class="review__content">
+                                        <div class="review__meta">
+                                            <div class="review__meta-left">
+                                                <div class="review__author">Алексей Петров</div>
+                                                <div class="review__position">Генеральный директор, ООО «ТехноМаркет»
+                                                </div>
+                                            </div>
+                                            <div class="review__project">Интернет-магазин автозапчастей</div>
+                                        </div>
+                                        <div class="review__text">
+                                            Заказывали разработку интернет-магазина с нуля. Очень довольны результатом!
+                                            Сайт получился быстрым, удобным для клиентов и понятным в управлении.
+                                            Особенно порадовала интеграция с 1С и CRM Битрикс24 — теперь все заказы
+                                            автоматически попадают в систему. Отдельное спасибо за проработку фильтров
+                                            по маркам автомобилей и VIN-номеру. Продажи выросли на 40% за первые 2
+                                            месяца. Ребята реально понимают, что нужно бизнесу!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide review__slide">
+
+                                    <div class="review__content">
+                                        <div class="review__meta">
+                                            <div class="review__meta-left">
+                                                <div class="review__author">Иван Морозов</div>
+                                                <div class="review__position">Основатель сервиса «Эко-доставка»</div>
+                                            </div>
+                                            <div class="review__project">Сервис заказа услуг</div>
+                                        </div>
+                                        <div class="review__text">
+                                            Обратился с идеей, у меня был только концепт на бумаге. Ребята помогли
+                                            продумать структуру, логику работы сервиса, сделали прототип и уже потом
+                                            приступили к разработке. Очень ценно, что подсказывают, как лучше,
+                                            предлагают оптимальные решения. Запустились через 2,5 месяца, как и
+                                            планировали. Сейчас активно развиваемся, дорабатываем функционал — команда
+                                            всегда готова помочь и подсказать. Огромное спасибо за профессионализм и
+                                            человеческое отношение!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide review__slide">
+
+                                    <div class="review__content">
+                                        <div class="review__meta">
+                                            <div class="review__meta-left">
+                                                <div class="review__author">Ольга Новикова</div>
+                                                <div class="review__position">Маркетолог, «Мебель-стиль»</div>
+                                            </div>
+                                            <div class="review__project">Редизайн и оптимизация интернет-магазина</div>
+                                        </div>
+                                        <div class="review__text">
+                                            Переделывали старый сайт, который уже не приносил продаж. Команда полностью
+                                            переработала дизайн, улучшила юзабилити, оптимизировала скорость загрузки.
+                                            Особенно порадовала работа с поведенческими факторами — проанализировали,
+                                            где пользователи уходят, и исправили проблемные места. Результат: конверсия
+                                            выросла в 2 раза, а поисковый трафик увеличился на 70%. Отдельное спасибо за
+                                            обучение — подробно показали, как работать с административной панелью,
+                                            теперь сами можем добавлять товары и акции.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts" aria-labelledby="services-heading">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <span class="header__decor_1"></span>
+                    <h2 id="services-heading" class="section-title">
+                        Оставьте заявку
+                    </h2>
                 </div>
 
-            </div>
-        </div>
-    </section>
+                <div class="callback__wrapper">
+                    <div class="callback__left">
+                        <div class="callback__title">
+                            Готовы к бусту Вашего бизнеса?
+                            Оставляйте заявку на звонок или свяжитесь с нами одним из способов ниже:
+                        </div>
+                        <div class="callback__contacts">
+                            <a class="callback__contact">
+                                <span>Telegram</span>
+                            </a>
+                            <a class="callback__contact">
+                                <span>contact@lapis.ru</span>
+                            </a>
+                            <a class="callback__contact">
+                                <span>8(900) 555-55-55</span>
+                            </a>
+                        </div>
+                    </div>
 
-    <section class="contacts" aria-labelledby="services-heading">
+                    <div class="callback__right">
+
+                        <form action="" class="callback__form">
+                            <h3 class="callback__form-title">Оставьте заявку и мы свяжемся с Вами в ближайшее время</h3>
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="phone" id="phone" placeholder="Телефон">
+                            </div>
+                            <div id="captcha-container"></div>
+                            <button type="submit" class="btn callback__form-submit" id="submitBtn" disabled="1">
+                                <span>Отправить</span>
+                            </button>
+                            <div class="modal__policy">
+                                Нажимая на кнопку, вы даёте согласие <a href="#" target="_blank">на обработку своих
+                                    персональных данных</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
         <div class="container">
-            <div class="section-title-wrap">
-                <span class="header__decor_1"></span>
-                <h2 id="services-heading" class="section-title">
-                    Оставьте заявку
-                </h2>
+
+            <div class="footer__wrap">
+
+                <div class="footer__main">
+
+                    <div class="footer__cols">
+                        <ul class="footer__col">
+                            <li>
+                                <a href="#" data-scroll="support">Поддержка и доработки</a>
+                            </li>
+                            <li>
+                                <a href="#" data-scroll="dev">Разработка сайта под ключ</a>
+                            </li>
+                            <li>
+                                <a href="#" data-scroll="seo">SEO-оптимизация</a>
+                            </li>
+                            <li>
+                                <a href="#" data-scroll="safety">Производительность и безопасность</a>
+                            </li>
+                        </ul>
+
+                        <ul class="footer__col">
+                            <li>
+                                <a href="#" data-scroll="whywe">Почему выбирают нас</a>
+                            </li>
+                            <li>
+                                <a href="#" data-scroll="cases">Портфолио</a>
+                            </li>
+                            <li>
+                                <a href="#" data-scroll="reviews">Отзывы</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <div>Свяжитесь с нами:</div>
+                        <div>8 900 000 00 00</div>
+                        <div>lapis-dev@yandex.ru</div>
+                        <div>Telegram</div>
+                    </div>
+
+                </div>
+
+                <div class="footer__bottom">
+                    <div class="footer__info">
+                        LAPIS.DEV 2026
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
 
-  </main>
-
-  <footer>
-    <div class="container">
-
-        <div class="footer__cols">
-            <ul class="footer__col">
-                <li>
-                    <a href="#" data-scroll="support">Поддержка и доработки</a>
-                </li>
-                <li>
-                    <a href="#" data-scroll="dev">Разработка сайта под ключ</a>
-                </li>
-                <li>
-                    <a href="#" data-scroll="seo">SEO-оптимизация</a>
-                </li>
-                <li>
-                    <a href="#" data-scroll="safety">Производительность и безопасность</a>
-                </li>
-            </ul>
-
-            <ul class="footer__col">
-                <li>
-                    <a href="#" data-scroll="whywe">Почему выбирают нас</a>
-                </li>
-                <li>
-                    <a href="#" data-scroll="cases">Портфолио</a>
-                </li>
-                <li>
-                    <a href="#" data-scroll="reviews">Отзывы</a>
-                </li>
-            </ul>
-        </div>
-
-            <div class="footer__col">
-                <div>Свяжитесь с нами:</div>
-                <div>8 900 000 00 00</div>
-                <div>lapis-dev@yandex.ru</div>
-                <div>Telegram</div>
-            </div>
-        </div>
-    </div>
+    </footer>
 
 
-  </footer>
 
-
-  <div id="" class="modal">
-
-  </div>
-  <script src="scripts/app.js"></script>
+    <script src="scripts/app.js"></script>
+    <!-- <script src="scripts/captcha.js"></script> -->
+    <script src="https://smartcaptcha.cloud.yandex.ru/captcha.js?render=onload&onload=smartCaptchaInit" defer></script>
 </body>
+
+<div class="modal" id="simpleModal">
+    <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <div class="modal-body">
+            <form method="post" action="" class="callback__form" id="callbackForm">
+                <h3 class="callback__form-title">Оставьте заявку и мы свяжемся с Вами в ближайшее время</h3>
+                <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="phone" id="phone" placeholder="Телефон">
+                </div>
+                <div id="modal-captcha-container"></div>
+                <button type="submit" class="btn callback__form-submit" id="modalSubmitBtn">
+                    <span>Отправить</span>
+                </button>
+                <div class="modal__policy">
+                    Нажимая на кнопку, вы даёте согласие <a href="#" target="_blank">на обработку своих персональных
+                        данных</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+
+<script>
+    const modal = document.getElementById('simpleModal');
+    const openBtns = document.querySelectorAll('[data-modal="callback"]');
+    const closeBtns = document.querySelectorAll('.close-modal');
+    const form = document.getElementById('callbackForm');
+
+
+
+    // Закрыть модалку
+    function closeModal() {
+        modal.classList.remove('show');
+        document.body.style.overflow = '';
+        form.reset();
+    }
+
+    // Обработчики открытия/закрытия
+    openBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden'; 
+
+            const btn = e.target.closest('[data-modal]');
+            const btnText = btn.dataset.header;
+
+            if(btnText) {
+                modal.querySelector('.callback__form-submit span').innerHTML = btnText;
+            }
+        });
+    })
+
+    closeBtns.forEach(close => {
+        close.addEventListener('click', closeModal);
+        modal.querySelector('.callback__form-submit span').innerHTML = "Отправить";
+    })
+
+    // Закрытие по клику на фон
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Закрытие по ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('show')) {
+            closeModal();
+        }
+    });
+</script>
 
 </html>

@@ -75,11 +75,6 @@ ul, ol {
   width: 100%;
 }
 
-main, header, footer {
-  overflow: hidden;
-  min-width: 360px;
-}
-
 svg, img {
   transition: 0.2s;
   max-width: 100%;
@@ -204,12 +199,19 @@ svg, img {
   z-index: 20;
   background: #fff;
 }
+.header .header__nav ul li {
+  cursor: pointer;
+}
 .header.header__fixed {
   box-shadow: var(--shadow-card);
   height: 70px;
+  z-index: 100;
 }
 .header.header__fixed .header__logo img {
   height: 50px;
+}
+.header.header__fixed .header__nav ul li {
+  cursor: pointer;
 }
 .header .header__inner {
   display: flex;
@@ -243,7 +245,7 @@ svg, img {
 }
 .header .header__nav ul li a:hover {
   color: #fff;
-  box-shadow: inset 200px 0 0 0 var(--c-blue);
+  box-shadow: inset 300px 0 0 0 var(--c-blue);
 }
 .header .header__nav ul li a.dropdown-link::after {
   content: url(../images/main/header/arr-dropdown.svg);
@@ -261,6 +263,24 @@ svg, img {
 .header .header__nav ul li a.dropdown-link:hover::after {
   top: 2px;
 }
+.header .dropdown-link:hover .dropdown-wrap {
+  opacity: 1;
+  visibility: visible;
+}
+.header .dropdown-wrap {
+  opacity: 0;
+  transition: 0.2s;
+  visibility: hidden;
+  position: absolute;
+  top: calc(100% + 10px);
+  z-index: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.3);
+}
+
 main {
   padding-top: 100px;
 }
@@ -400,7 +420,7 @@ main.header__fixed {
 
 .services {
   margin-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 #services-heading {
@@ -446,6 +466,7 @@ main.header__fixed {
   z-index: 20;
   position: relative;
   margin-top: 20px;
+  height: 45px;
 }
 .services__item .service__content-wrap {
   display: grid;
@@ -853,10 +874,38 @@ main.header__fixed {
 .reviews__wrapper {
   display: flex;
   margin: 50px 0 50px;
+  gap: 50px;
 }
 
 .reviews__left {
   flex: 1;
+}
+
+.reviews__title {
+  font-size: 34px;
+  line-height: 110%;
+  padding-bottom: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews__title-decor {
+  position: relative;
+  left: -20px;
+  height: 20px;
+  width: 250px;
+  transform: skewX(-30deg);
+  background: var(--c-blue);
+  opacity: 0.7;
+}
+
+.reviews__text {
+  font-size: 26px;
+  color: #ffffff;
+  background: var(--c-blue);
+  padding: 30px;
 }
 
 .reviews__right {
@@ -864,12 +913,310 @@ main.header__fixed {
 }
 
 .reviews__slider {
-  height: 600px;
+  height: 700px;
 }
 
 .review__slide {
   padding: 15px;
-  background: #b1b1b1;
+  border: 2px var(--c-blue) solid;
+  background: #ffffff;
+}
+
+.review__meta {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.review__author {
+  margin-bottom: 5px;
+  width: fit-content;
+  position: relative;
+}
+.review__author::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: -15px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--c-blue);
+}
+
+.review__position {
+  font-size: 12px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.review__project {
+  font-size: 12px;
+  padding: 5px 10px;
+  background: var(--c-purple);
+  width: fit-content;
+  color: #ffffff;
+}
+
+.review__text {
+  font-size: 12px;
+  border-left: 5px var(--c-blue) solid;
+  padding-left: 10px;
+}
+
+.callback__wrapper {
+  padding-top: 50px;
+  display: flex;
+  gap: 50px;
+}
+
+.callback__left {
+  flex: 1;
+}
+
+.callback__title {
+  max-width: 500px;
+  font-size: 36px;
+}
+
+.callback__contacts {
+  display: flex;
+  gap: 20px;
+  padding-top: 30px;
+}
+
+.callback__contact {
+  font-family: inherit;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border: none;
+  background: var(--c-blue);
+  color: ghostwhite;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  /* Animated text glow effect */
+}
+.callback__contact:hover {
+  background: var(--color-text-main);
+}
+.callback__contact:active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple 0.6s ease-out;
+  z-index: -1;
+}
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 0;
+  }
+}
+.callback__contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  transition: all 0.3s ease;
+}
+.callback__contact:hover::after {
+  left: 150%;
+  transition: all 0.5s ease;
+}
+
+.callback__right {
+  flex: 1;
+}
+
+.callback__form {
+  position: relative;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  border: #fff solid 1px;
+  color: ghostwhite;
+  background: linear-gradient(to left, #8000ca 0%, #4a00e0 50%);
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.callback__form-title {
+  margin-bottom: 30px;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 110%;
+}
+
+.form-group {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 100%;
+  padding: 5px 15px;
+  border: 2px solid transparent;
+}
+
+.form-group input:active, .form-group input:focus {
+  border: 2px solid #000286;
+  box-shadow: 0px 0px 8px 2px rgba(255, 251, 0, 0.8);
+}
+
+.callback__form-submit {
+  width: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background: white;
+  position: relative;
+  max-width: 560px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: modalFadeIn 0.3s ease;
+  padding: 0;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.modal-header h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  padding-bottom: 8px;
+  color: rgb(26, 26, 26);
+}
+
+.modal-header p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: rgb(63, 63, 63);
+}
+
+.close-modal {
+  background: #fff;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: rgb(63, 63, 63);
+  line-height: 1;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+  position: absolute;
+  right: -35px;
+  top: -35px;
+}
+
+.close-modal:hover {
+  color: #e60000;
+}
+
+.form-group {
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px 16px;
+  height: 56px;
+  border: 1px solid rgb(239, 241, 245);
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+  background: rgb(239, 241, 245);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #e6a500;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+.modal__form-bottom {
+  padding-top: 0;
+}
+
+.modal__policy {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: rgb(255, 255, 255);
+}
+.modal__policy a {
+  text-decoration: underline;
 }
 
 footer {
@@ -877,12 +1224,20 @@ footer {
   background: #000;
   color: #fff;
   margin-top: 100px;
-  padding: 50px 0;
+  padding: 50px 0 20px;
+}
+
+.footer__main {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
 }
 
 .footer__cols {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .footer__col {

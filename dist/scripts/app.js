@@ -73,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
     casesSlider();
 
     function reviewsSlider() {
-        console.log(234234);
         
     
     const reviewsSlider = new Swiper('.reviews__slider', {
@@ -81,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         slidesPerView: 3, // показываем 3 слайда одновременно
         spaceBetween: 20,
-        autoplay: true,
+        // autoplay: true,
         
         // Центрируем активный слайд
         centeredSlides: true,
@@ -267,6 +266,56 @@ reviewsSlider();
         height: '50px',
         ease: "Expo.easeInOut"
     })
+    
+    const tl_review_decor = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.reviews__title-decor',
+        }
+    });
+
+    tl_review_decor.from('.reviews__title-decor', 1, {
+        width: '0px',
+        ease: "Expo.easeInOut",
+        delay: 0.2
+    });
+
+    const tl_review_text = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.reviews__text',
+        }
+    });
+
+    tl_review_text.from('.reviews__text', 1, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power2.out",
+        delay: 0.2
+    });
+
+
+
+    // Create timeline for reviews with stagger effect
+    const tl_reviews = gsap.timeline({
+        scrollTrigger: {
+            trigger: '.reviews__slider',
+            start: 'top 80%', // Animation starts when slider enters viewport
+            toggleActions: 'play none none none'
+        }
+    });
+
+    // Animate each review slide with stagger
+    tl_reviews.from('.review__slide', {
+        duration: 1,
+        opacity: 0,
+        y: 100,
+        stagger: {
+            amount: 0.5, // Total stagger time (0.5 seconds between all animations)
+            from: "start", // Can be "start", "center", "end", or "edges"
+            ease: "power2.out"
+        },
+        ease: "power2.out"
+    });
 
 
 

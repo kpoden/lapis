@@ -1,6 +1,6 @@
 .services {
     margin-top: 100px;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
 }
 
 #services-heading {
@@ -55,6 +55,7 @@
         z-index: 20;
         position: relative;
         margin-top: 20px;
+        height: 45px;
     }
 
     .service__content-wrap {
