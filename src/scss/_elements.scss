@@ -75,6 +75,51 @@
     margin-bottom: 0px;
 }
 
+.section-title-wrap.isArrs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title__arrs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+
+    .title__arr {
+        background: var(--c-blue);
+        cursor: pointer;
+        position: relative;
+        transition: .2s;
+
+        svg {
+            position: relative;
+            transition: .2s;
+        }
+    }
+
+    .arr-l {
+        display: flex;
+        align-items: center;
+        transform: rotate(-180deg);
+
+        &:hover {
+            background: #260073;
+        }
+    }
+
+    .arr-r {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            background: #260073;
+        }
+    }
+}
+
+
+
 .section-title {
   font-family: 'Montserrat';
   font-size: 38px;

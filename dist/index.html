@@ -16,16 +16,9 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js"
-        integrity="sha512-gloNJjJNXOqLPOVxOJ/Sg9VN4jSPZpDdEQC+CDP0TczZ6OaOk0Ru1daFEOT/XAJY7fYABwFWVRXOx4HMFr6+lA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
 
     <title>Студия веб-разработки Lapis Dev</title>
 
@@ -851,11 +844,24 @@
 
         <section class="cases" aria-labelledby="services-heading" id="cases">
             <div class="container">
-                <div class="section-title-wrap">
+                <div class="section-title-wrap isArrs">
                     <span class="header__decor_1"></span>
                     <h2 id="services-heading" class="section-title">
                         Портфолио
                     </h2>
+
+                    <div class="title__arrs">
+                        <div class="cases__title-arr title__arr arr-l">
+                            <svg fill="currentColor" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/>
+                            </svg>
+                        </div>
+                        <div class="cases__title-arr title__arr arr-r">
+                            <svg fill="currentColor" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="cases__content">
@@ -873,22 +879,26 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Разработан каталог с фильтрацией по размерам, цветам, брендам и сезонам.</li>
+                                        <li>Реализован быстрый заказ в один клик без регистрации.</li>
+                                        <li>Настроена интеграция с Boxberry и СДЭК для автоматического расчёта доставки.</li>
+                                        <li>Добавлен модуль возврата товара с генерацией заявки в личном кабинете.</li>
+                                        <li>Создана админ-панель для редактирования баннеров и акций без программиста.</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/1/1.png" class="case__inner-slide swiper-slide" data-fancybox="1">
                                             <img src="images/portfolio/1/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/1/2.png" class="case__inner-slide swiper-slide" data-fancybox="1">
                                             <img src="images/portfolio/1/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/1/3.png" class="case__inner-slide swiper-slide" data-fancybox="1">
                                             <img src="images/portfolio/1/3.png" alt="">
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
@@ -903,22 +913,26 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Старый сайт на самописном движке перенесён на Битрикс с сохранением базы товаров.</li>
+                                        <li>Полностью переработан дизайн под мобильные устройства (mobile-first).</li>
+                                        <li>Интеграция с 1С: выгрузка остатков, цен и новых товаров каждые 30 минут.</li>
+                                        <li>Сокращено время загрузки страницы каталога с 3 секунд до 0,8 секунды.</li>
+                                        <li>Проведена SEO-оптимизация и повышение позиций в поисковой выдаче.</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/2/1.png" class="case__inner-slide swiper-slide" data-fancybox="2">
                                             <img src="images/portfolio/2/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/2/2.png" class="case__inner-slide swiper-slide" data-fancybox="2">
                                             <img src="images/portfolio/2/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/2/3.png" class="case__inner-slide swiper-slide" data-fancybox="2">
                                             <img src="images/portfolio/2/3.png" alt="">
-                                        </div>
+                                        </a>
                                     </div>
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
@@ -933,22 +947,27 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Разработан каталог объектов с фильтром по этажности, площади, материалу и т.д.</li>
+                                        <li>Разработан адаптивный дизайн.</li>
+                                        <li>Создание личного кабинета пользователя.</li>
+                                        <li>Создан калькулятор расчета стоимости стороительства.</li>
+                                        <li>Оптимизирована скорость загрузки сайта и создана система бэкапов.</li>
+                                        <li>Настроена отправка заявок в Telegram-бот отдела продаж.</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/3/1.png" class="case__inner-slide swiper-slide" data-fancybox="3">
                                             <img src="images/portfolio/3/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/3/2.png" class="case__inner-slide swiper-slide" data-fancybox="3">
                                             <img src="images/portfolio/3/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/3/3.png" class="case__inner-slide swiper-slide" data-fancybox="3">
                                             <img src="images/portfolio/3/3.png" alt="">
-                                        </div>
+                                        </a>
                                     </div>
 
                                     <div class="swiper-button-next"></div>
@@ -964,22 +983,26 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Разработан сайт-каталог услуг с разделением на терапию, хирургию, ортопедию, имплантацию.</li>
+                                        <li>Реализована онлайн-запись к врачу с выбором даты, времени и направления.</li>
+                                        <li>Добавлен личный кабинет пациента: история визитов, напоминания о приёме, загрузка снимков.</li>
+                                        <li>Настроена интеграция с CRM клиники для автоматического добавления заявок.</li>
+                                        <li>Создан раздел «наши работы» с фотогалереей кейсов до/после.</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
-                                            <img src="images/portfolio/4/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
-                                            <img src="images/portfolio/4/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/4/3.png" class="case__inner-slide swiper-slide" data-fancybox="4">
                                             <img src="images/portfolio/4/3.png" alt="">
-                                        </div>
+                                        </a>
+                                        <a href="images/portfolio/4/2.png" class="case__inner-slide swiper-slide" data-fancybox="4">
+                                            <img src="images/portfolio/4/2.png" alt="">
+                                        </a>
+                                        <a href="images/portfolio/4/1.png" class="case__inner-slide swiper-slide" data-fancybox="4">
+                                            <img src="images/portfolio/4/1.png" alt="">
+                                        </a>
                                     </div>
 
                                     <div class="swiper-button-next"></div>
@@ -995,22 +1018,26 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Сайт разработан на вордпресс с модулем WooCommerce</li>
+                                        <li>Разработан подробный каталог продукции с ЧПУ, а также портфолио</li>
+                                        <li>Настроен автоматический расчёт стоимости онлайн (прозрачная формула для клиента).</li>
+                                        <li>Настроена система заявок с отправкой в Битрикс24 и Telegram</li>
+                                        <li>Значительно улучшена скорость загрузки страниц сайта.</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/5/1.png" class="case__inner-slide swiper-slide" data-fancybox="5">
                                             <img src="images/portfolio/5/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/5/2.png" class="case__inner-slide swiper-slide" data-fancybox="5">
                                             <img src="images/portfolio/5/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/5/3.png" class="case__inner-slide swiper-slide" data-fancybox="5">
                                             <img src="images/portfolio/5/3.png" alt="">
-                                        </div>
+                                        </a>
                                     </div>
 
                                     <div class="swiper-button-next"></div>
@@ -1026,22 +1053,26 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Сайт перенесен на Битрикс, созданы разделы по услугам</li>
+                                        <li>Система обратной связи через заявки с учетом бюджета клиента</li>
+                                        <li>Создан раздел портфолио с примерами</li>
+                                        <li>Проведена базовая SEO-оптимизация</li>
+                                        <li>Обеспечено резервное копирование каждые 24 часа в облако.</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/6/1.png" class="case__inner-slide swiper-slide" data-fancybox="6">
                                             <img src="images/portfolio/6/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/6/2.png" class="case__inner-slide swiper-slide" data-fancybox="6">
                                             <img src="images/portfolio/6/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/6/3.png" class="case__inner-slide swiper-slide" data-fancybox="6">
                                             <img src="images/portfolio/6/3.png" alt="">
-                                        </div>
+                                        </a>
                                     </div>
 
                                     <div class="swiper-button-next"></div>
@@ -1057,22 +1088,26 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Реализован ЧПУ-каталог на БУС</li>
+                                        <li>Создан каталог с фильтрами, детальной страницей с планировкой и примерами работ</li>
+                                        <li>Созданы разделы в соответствие с ТЗ</li>
+                                        <li>Реализована отправка заявок в CRM</li>
+                                        <li>SEO-оптимизация сайта и настройка систем аналитики</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/7/1.png" class="case__inner-slide swiper-slide" data-fancybox="7">
                                             <img src="images/portfolio/7/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/7/2.png" class="case__inner-slide swiper-slide" data-fancybox="7">
                                             <img src="images/portfolio/7/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/7/3.png" class="case__inner-slide swiper-slide" data-fancybox="7">
                                             <img src="images/portfolio/7/3.png" alt="">
-                                        </div>
+                                        </a>
                                     </div>
 
                                     <div class="swiper-button-next"></div>
@@ -1088,22 +1123,26 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Разработан оптовый каталог с разделением цен: розница, мелкий опт, крупный опт (разные группы пользователей).</li>
+                                        <li>Выполнен перенос 15 000+ товаров, 5 000+ изображений и 200+ категорий.</li>
+                                        <li>Создан личный кабинет менеджера для подтверждения заказов и управления клиентами.</li>
+                                        <li>Реализован расчёт доставки по габаритам товара.</li>
+                                        <li>Переписана система скидок: накопительная + персональные по группам пользователей.</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/8/1.png" class="case__inner-slide swiper-slide" data-fancybox="8">
                                             <img src="images/portfolio/8/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/8/2.png" class="case__inner-slide swiper-slide" data-fancybox="8">
                                             <img src="images/portfolio/8/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/8/3.png" class="case__inner-slide swiper-slide" data-fancybox="8">
                                             <img src="images/portfolio/8/3.png" alt="">
-                                        </div>
+                                        </a>
                                     </div>
 
                                     <div class="swiper-button-next"></div>
@@ -1119,22 +1158,26 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Доработана система заказов и обратной связи.</li>
+                                        <li>Проведена техническая оптимизация: исправлены ошибки индексации, ускорена загрузка.</li>
+                                        <li>Настроен сбор поведенческих факторов через метрику и цели.</li>
+                                        <li>Исправлены ошибки в работе E-mail оповещений.</li>
+                                        <li>Настроены бекапы сайта и клиентской базы.</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/9/1.png" class="case__inner-slide swiper-slide" data-fancybox="9">
                                             <img src="images/portfolio/9/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/9/2.png" class="case__inner-slide swiper-slide" data-fancybox="9">
                                             <img src="images/portfolio/9/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/9/3.png" class="case__inner-slide swiper-slide" data-fancybox="9">
                                             <img src="images/portfolio/9/3.png" alt="">
-                                        </div>
+                                        </a>
                                     </div>
 
                                     <div class="swiper-button-next"></div>
@@ -1150,22 +1193,26 @@
                                 </span>
 
                                 <div class="case__descr">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, eaque nobis! Quia
-                                    quasi a voluptatem enim reprehenderit quaerat laborum deserunt. Iure eum tenetur
-                                    nobis laboriosam repellendus sequi ratione quos architecto.
+                                    <ul>
+                                        <li>Разработан каталог на 1С-Битрикс с неограниченной вложенностью разделов и фильтрами.</li>
+                                        <li>Настроена корзина с расчётом доставки по регионам (интеграция со службами).</li>
+                                        <li>Реализован личный кабинет с историей заказов и автозаполнением адресов.</li>
+                                        <li>Создан личный кабинет пользователя с контролем статуса заказа</li>
+                                        <li>Создана система приёма заявок менеджеров и контроля их выполения в административной части</li>
+                                    </ul>
                                 </div>
 
                                 <div class="case__inner-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="case__inner-slide swiper-slide">
+                                        <a href="images/portfolio/10/1.png" class="case__inner-slide swiper-slide" data-fancybox="10">
                                             <img src="images/portfolio/10/1.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/10/2.png" class="case__inner-slide swiper-slide" data-fancybox="10">
                                             <img src="images/portfolio/10/2.png" alt="">
-                                        </div>
-                                        <div class="case__inner-slide swiper-slide">
+                                        </a>
+                                        <a href="images/portfolio/10/3.png" class="case__inner-slide swiper-slide" data-fancybox="10">
                                             <img src="images/portfolio/10/3.png" alt="">
-                                        </div>
+                                        </a>
                                     </div>
 
                                     <div class="swiper-button-next"></div>
@@ -1181,11 +1228,24 @@
 
         <section class="reviews" aria-labelledby="services-heading" id="reviews">
             <div class="container">
-                <div class="section-title-wrap">
+                <div class="section-title-wrap isArrs">
                     <span class="header__decor_1"></span>
                     <h2 id="services-heading" class="section-title">
                         Отзывы
                     </h2>
+
+                    <div class="title__arrs">
+                        <div class="reviews__title-arr title__arr arr-l">
+                            <svg fill="currentColor" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/>
+                            </svg>
+                        </div>
+                        <div class="reviews__title-arr title__arr arr-r">
+                            <svg fill="currentColor" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="reviews__wrapper">
@@ -1443,6 +1503,14 @@
     <script src="scripts/app.js"></script>
     <!-- <script src="scripts/captcha.js"></script> -->
     <script src="https://smartcaptcha.cloud.yandex.ru/captcha.js?render=onload&onload=smartCaptchaInit" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-player/1.4.3/lottie-player.js"
+        integrity="sha512-gloNJjJNXOqLPOVxOJ/Sg9VN4jSPZpDdEQC+CDP0TczZ6OaOk0Ru1daFEOT/XAJY7fYABwFWVRXOx4HMFr6+lA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 <div class="modal" id="simpleModal">

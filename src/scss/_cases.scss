@@ -61,10 +61,24 @@
 }
 
 
-.swiper-button-next {
+.case__slide  .swiper-button-next {
+    width: 50px;
+    height: 50px;
+    background: var(--c-blue);
+    color: #fff;
 
+    &:after {
+        font-size: 18px;
+    }
 }
 
-.swiper-button-prev {
+.case__slide  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background: var(--c-blue);
+    color: #fff;
 
+    &:after {
+        font-size: 18px;
+    }
 }
