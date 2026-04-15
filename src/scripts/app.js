@@ -553,4 +553,25 @@ reviewsSlider();
         }
     }
 
+
+    function casesDescr() {
+        const sildes = document.querySelectorAll('.case__slide ');
+
+        sildes.forEach(slide => {
+            slide.addEventListener('mouseover', () => {
+                sildes.forEach(slide=>slide.classList.remove('over'));
+
+                slide.classList.add('over');
+            })
+        });
+
+        sildes.forEach(slide => {
+            slide.addEventListener('mouseleave', () => {
+                sildes.forEach(slide=>slide.classList.remove('over'));
+            })
+        })
+    }
+
+    casesDescr()
+
 });
