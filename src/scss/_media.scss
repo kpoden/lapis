@@ -1,0 +1,284 @@
+@media(max-width: 1024px) {
+
+    .btn {
+        min-height: 40px;
+    }
+
+    .hero__title {
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+
+    .hero__img .hero__animation {
+        max-width: 400px;
+    }
+
+    .header .header__nav ul li a {
+        font-size: 14px;
+    }
+
+    
+
+}
+
+
+@media(max-width: 991px) {
+    .hero__text {
+        font-size: 14px;
+    }
+
+    .btn span {
+        font-size: 12px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .hero__buttons .price-label {
+        font-size: 12px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .header__decor_1 {
+        height: 120%;
+    }
+    
+    .services__tabs {
+        display: grid;  
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .services__tabs {
+        padding: 30px 0;
+    }
+
+    .services__list {
+        gap: 50px;
+    }
+
+    .services__item h3 {
+        font-size: 32px;
+    }
+
+    .service__text-inner {
+        font-size: 20px;
+    }
+
+    .service__techs .service__steps .service__step-title {
+        font-size: 18px;
+    }
+
+    .service__list .service__item-title {
+        font-size: 20px;
+    }
+
+    .service__list .service__item-title::before {
+        width: 90%;
+        height: 55px;
+    }
+
+    .whywe__item .whywe__item-title {
+        font-size: 22px;
+    }
+
+    .whywe__item .whywe__item-text {
+        font-size: 16px;
+    }
+
+    .reviews__title-item {
+        font-size: 24px;
+        line-height: 105%;
+    }
+
+    .reviews__text {
+        font-size: 20px;
+    }
+    
+
+    .callback__title {
+        font-size: 24px;
+    }
+
+    
+}
+
+
+@media(max-width: 768px) {
+
+    .btn {
+        min-width: 160px;
+    }
+
+    .header__decor_1 {
+        width: 100%;
+    }
+
+    .hero__inner {
+        justify-content: center;
+    }
+
+    .hero__content {
+        min-width: 95%;
+    }
+
+    .hero__img {
+        display: none;
+    }
+
+    .hero__title {
+        font-size: 20px;
+    }
+
+    .hero__buttons .price-label {
+        font-size: 10px;
+    }
+
+    .service__text {
+        max-width: 100%;
+    }
+
+    .service__row {
+        flex-direction: column;
+    }
+
+    .service__prices .cur-price {
+        font-size: 18px;
+    }
+
+    .services__tab {
+        height: 45px;
+    }
+
+    .service__cta .service__cta-content {
+        text-align: center;
+    }
+
+    .services__item {
+        padding: 25px;
+    }
+
+    .services__item h3 {
+        font-size: 24px;
+    }
+
+    .service__text {
+        margin-bottom: 10px;
+    }
+
+    .service__text-inner {
+        font-size: 18px;
+    }
+
+    .service__list .service__item {
+        margin-bottom: 20px;
+    }
+
+    .service__techs {
+        padding: 15px;
+    }
+
+    .whywe__item .whywe__item-num {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        // display: flex;
+        // margin-bottom: 10px;
+    }
+
+    .whywe__list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .advantages__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advantages__text {
+        font-size: 16px;
+    }
+
+    .advantages__num span {
+        font-size: 30px;
+    }
+
+    .advantages__num {
+        font-size: 20px;
+    }
+
+    .whywe__list {
+        gap: 15px;
+    }
+
+    .whywe__item {
+        padding: 10px 5px;
+    }
+
+    .whywe__title {
+        font-size: 24px;
+    }
+
+    .whywe__text {
+        padding: 20px;
+    }
+
+    .whywe__text .whywe__text-inner {
+        font-size: 20px;
+    }
+
+    .reviews__wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .reviews__title {
+        padding-bottom: 25px;
+        gap: 10px;
+    }
+
+    .reviews__slider {
+        height: 250px;
+    }
+
+    .callback__wrapper {
+        flex-direction: column;
+    }
+    
+    
+}
+
+
+@media(max-width: 480px) {
+    .services__tabs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    
+
+    .services__item h3 {
+        font-size: 18px;
+    }
+
+    .advantages__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .whywe__text .whywe__text-inner {
+        font-size: 16px;
+    }
+
+    .reviews__slider {
+        height: 300px;
+    }
+
+    
+}
+
+

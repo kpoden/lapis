@@ -12,6 +12,11 @@
     overflow: hidden;
     text-transform: uppercase;
     text-align: center;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
 }
 
 .btn span {
@@ -20,7 +25,8 @@
   transition: color 0.4s;
   display: inline-flex;
   align-items: center;
-  padding: 0.8em 1.2em 0.8em 1.05em;
+  padding: 10px 15px;
+  font-size: 16px;
 }
 
 .btn::before,
@@ -131,8 +137,9 @@
 
 .header__decor_1 {
   position: absolute;
-  width: 60%;
-  height: 70px;
+  width: 80%;
+  min-height: 70px;
+  height: 100%;
   background: var(--c-blue);
   z-index: 0;
   top: -10px;

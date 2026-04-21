@@ -73,6 +73,7 @@
     position: absolute;
     right: -35px;
     top: -35px;
+    font-family: Montserrat, sans-serif;
     // border-radius: 6px;
 }
 
@@ -90,7 +91,8 @@
 }
 
 
-.form-group input,
+.form-group input[type="text"],
+.form-group input[type="tel"],
 .form-group textarea,
 .form-group select {
     width: 100%;

@@ -28,8 +28,12 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    ul {
+        margin: 0;
+        list-style: none;
+    }
 
     li {
-
+        
     }
 }

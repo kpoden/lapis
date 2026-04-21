@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function casesSlider() {
         // Инициализация Swiper
         const cases__slider = new Swiper('.cases__slider', {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20,
             centeredSlides: true,
             loop: false,
@@ -53,6 +53,18 @@ document.addEventListener("DOMContentLoaded", function () {
             //     disableOnInteraction: false,
             //     pauseOnMouseEnter: true
             // },
+
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 2,
+                    initialSlide: 1, 
+                },
+            },
 
 
             // Навигация
@@ -82,10 +94,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const reviewsSlider = new Swiper('.reviews__slider', {
         direction: 'vertical', 
         
-        slidesPerView: 3, 
+        slidesPerView: 1, 
         spaceBetween: 20,
-        autoplay: true,
-                centeredSlides: true,
+        // autoplay: true,
+        centeredSlides: true,
         
         loop: true,
         
@@ -101,6 +113,19 @@ document.addEventListener("DOMContentLoaded", function () {
         
         mousewheel: {
             sensitivity: 1,
+        },
+
+        breakpoints: {
+            // when window width is >= 640px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            // when window width is >= 1024px
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+            },
         },
     });
 }
@@ -319,10 +344,16 @@ reviewsSlider();
 
     document.querySelectorAll('.header__decor_1').forEach((element, index) => {
     // Создаем уникальную timeline для каждого элемента
+
+    const isMobile = window.screen.width <= 768;
+    const targetWidth = isMobile ? '100%' : '80%';
+
+    
+
     const tl = gsap.timeline({
         scrollTrigger: {
             trigger: element,
-            start: "top 80%", // можно настроить триггер
+            start: "top 80%", 
         }
     });
     
@@ -342,7 +373,7 @@ reviewsSlider();
         ease: "Expo.easeInOut"
     })
     .to(element, 0, {
-        width: '60%',
+        width: targetWidth ,
         ease: "Expo.easeInOut"
     });
     
