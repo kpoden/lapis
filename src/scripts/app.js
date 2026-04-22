@@ -75,10 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Пагинация
             pagination: {
-                el: '.swiper-pagination',
+                el: '.cases__content .mob__pag',
                 clickable: true,
             }
 
+        });
+
+        document.querySelector('.mob__arrs .title__arr.arr-l').addEventListener('click', () => {
+            cases__slider.slidePrev();
+        });
+
+        document.querySelector('.mob__arrs .title__arr.arr-r').addEventListener('click', () => {
+            cases__slider.slideNext();
         });
 
 
@@ -107,7 +115,8 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         
         pagination: {
-            el: '.swiper-pagination',
+            el: '.reviews__wrapper .mob__pag',
+            direction: 'horizontal', 
             clickable: true,
         },
         
@@ -447,7 +456,8 @@ reviewsSlider();
 
     function serviceSpoilers() {
         const serviceContents = document.querySelectorAll('.services__item');
-        const serviceShowMore = document.querySelectorAll('.service__show-more');
+        const serviceShowMore = document.querySelectorAll('.service__show-more, .service__toggle');
+
 
         serviceShowMore.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -461,12 +471,16 @@ reviewsSlider();
                 });
 
                 serviceShowMore.forEach(otherBtn => {
-                    otherBtn.querySelector('span').textContent = 'Показать больше';
+                    if(otherBtn.classList.contains('.service__show-more')) {
+                        otherBtn.querySelector('span').textContent = 'Показать больше';
+                    }
                 });
 
                 if (!isOpened) {
                     serviceContent.classList.add('opened');
-                    btn.querySelector('span').textContent = 'Свернуть';
+
+                    
+                    serviceContent.querySelector('.service__show-more span').textContent = 'Свернуть';
                 } 
 
                 setTimeout(() => {
@@ -603,6 +617,67 @@ reviewsSlider();
         })
     }
 
-    casesDescr()
+    casesDescr();
+
+    // Мобильное меню
+    (function() {
+        const burgerBtn = document.querySelector('.burger-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const dropdownBtns = document.querySelectorAll('.mobile-dropdown__btn');
+        const closeMenuBtn = document.querySelector('.mob__menu-close');
+        
+        // Создаём оверлей
+        const overlay = document.createElement('div');
+        overlay.className = 'mobile-menu-overlay';
+        document.body.appendChild(overlay);
+        
+        // Открытие/закрытие меню
+        function openMenu() {
+            burgerBtn.classList.add('active');
+            mobileMenu.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            burgerBtn.setAttribute('aria-expanded', 'true');
+        }
+        
+        function closeMenu() {
+            burgerBtn.classList.remove('active');
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            burgerBtn.setAttribute('aria-expanded', 'false');
+        }
+        
+        burgerBtn.addEventListener('click', () => {
+            if (mobileMenu.classList.contains('active')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+        
+        overlay.addEventListener('click', closeMenu);
+        closeMenuBtn.addEventListener('click', closeMenu);
+        
+        // Работа с вложенными пунктами
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const parent = btn.closest('.mobile-dropdown');
+                const dropdownMenu = parent.querySelector('.mobile-dropdown__menu');
+                
+                btn.classList.toggle('active');
+                dropdownMenu.classList.toggle('open');
+            });
+        });
+        
+        // Закрываем меню при клике на ссылку
+        const mobileLinks = document.querySelectorAll('.mobile-nav__link, .mobile-dropdown__menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeMenu();
+            });
+        });
+    })();
 
 });

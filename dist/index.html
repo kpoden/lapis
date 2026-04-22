@@ -30,7 +30,7 @@
         <div class="container header__inner">
             <!-- Логотип с ссылкой на главную -->
             <a href="/" class="header__logo logo" aria-label="На главную">
-                <img src="images/main/header/logo.png" alt="Веб-студия Lapis Dev" style="max-width: 300px;">
+                <img src="images/main/header/logo.png" alt="Веб-студия Lapis Dev">
             </a>
             <nav class="header__nav" aria-label="Основная навигация">
                 <ul>
@@ -52,9 +52,17 @@
                 </ul>
             </nav>
 
+            
+
             <div class="header__contacts">
                 <button class="btn header__btn" data-modal="callback" data-header="Связаться с нами"><span>Связаться с нами</span></button>
             </div>
+
+            <button class="burger-btn" aria-label="Меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
 
     </header>
@@ -99,7 +107,7 @@
                                     эффективности и увеличения продаж.</p>
                                 <div class="hero__buttons">
                                     <button class="hero__btn btn"><span>Узнать подробности</span></button>
-                                    <div class="price-label">от 2290 р./час</div>
+                                    <div class="price-label">от 2190 р./час</div>
                                 </div>
                             </div>
 
@@ -157,6 +165,15 @@
                 <div class="services__list">
 
                     <div class="services__item service opened" data-tab="support" id="support">
+
+                        <div class="service__toggle" data-tab="support">
+                            <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                width="30px" height="30px" viewBox="0 0 30.727 30.727"
+                                xml:space="preserve">
+                            <g><path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+                                    l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"/></g>
+                            </svg>
+                        </div>
 
                         <div class="sevices__main-header">
                             <h3>Поддержка и доработки</h3>
@@ -297,6 +314,16 @@
                     </div>
 
                     <div class="services__item service" data-tab="dev" id="dev">
+
+                        <div class="service__toggle" data-tab="dev">
+                            <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                width="30px" height="30px" viewBox="0 0 30.727 30.727"
+                                xml:space="preserve">
+                            <g><path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+                                    l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"/></g>
+                            </svg>
+                        </div>
+
                         <div class="sevices__main-header">
                             <h3>Разработка сайта под ключ</h3>
                             <span class="serv__decor"></span>
@@ -449,6 +476,15 @@
                     </div>
 
                     <div class="services__item service" data-tab="seo" id="seo">
+
+                        <div class="service__toggle" data-tab="seo">
+                            <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                width="30px" height="30px" viewBox="0 0 30.727 30.727"
+                                xml:space="preserve">
+                            <g><path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+                                    l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"/></g>
+                            </svg>
+                        </div>
 
                         <div class="sevices__main-header">
                             <h3>Аналитика и SEO</h3>
@@ -636,6 +672,15 @@
                     </div>
 
                     <div class="services__item service" data-tab="safety" id="safety">
+
+                        <div class="service__toggle" data-tab="safety">
+                            <svg fill="#fff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                width="30px" height="30px" viewBox="0 0 30.727 30.727"
+                                xml:space="preserve">
+                            <g><path d="M29.994,10.183L15.363,24.812L0.733,10.184c-0.977-0.978-0.977-2.561,0-3.536c0.977-0.977,2.559-0.976,3.536,0
+                                    l11.095,11.093L26.461,6.647c0.977-0.976,2.559-0.976,3.535,0C30.971,7.624,30.971,9.206,29.994,10.183z"/></g>
+                            </svg>
+                        </div>
 
                         <div class="sevices__main-header">
                             <h3>Производительность и безопасность</h3>
@@ -1388,6 +1433,20 @@
                         </div>
                     </div>
 
+                    <div class="mob__arrs">
+                        <div class="title__arr arr-l">
+                            <svg fill="currentColor" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/>
+                            </svg>
+                        </div>
+                        <div class="mob__pag"></div>
+                        <div class="title__arr arr-r">
+                            <svg fill="currentColor" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/>
+                            </svg>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -1447,7 +1506,7 @@
                                     <div class="review__content">
                                         <div class="review__meta">
                                             <div class="review__meta-left">
-                                                <div class="review__author">Алексей Петров</div>
+                                                <div class="review__author">Алексей</div>
                                                 <div class="review__position">Генеральный директор, ООО «ТехноМаркет»
                                                 </div>
                                             </div>
@@ -1468,7 +1527,7 @@
                                     <div class="review__content">
                                         <div class="review__meta">
                                             <div class="review__meta-left">
-                                                <div class="review__author">Дмитрий Козлов</div>
+                                                <div class="review__author">Дмитрий</div>
                                                 <div class="review__position">Владелец, «Мир инструмента»</div>
                                             </div>
                                             <div class="review__project">Каталог товаров с фильтрацией</div>
@@ -1489,7 +1548,7 @@
                                     <div class="review__content">
                                         <div class="review__meta">
                                             <div class="review__meta-left">
-                                                <div class="review__author">Алексей Петров</div>
+                                                <div class="review__author">Алексей</div>
                                                 <div class="review__position">Генеральный директор, ООО «ТехноМаркет»
                                                 </div>
                                             </div>
@@ -1510,7 +1569,7 @@
                                     <div class="review__content">
                                         <div class="review__meta">
                                             <div class="review__meta-left">
-                                                <div class="review__author">Иван Морозов</div>
+                                                <div class="review__author">Иван</div>
                                                 <div class="review__position">Основатель сервиса «Эко-доставка»</div>
                                             </div>
                                             <div class="review__project">Сервис заказа услуг</div>
@@ -1539,15 +1598,27 @@
                                         <div class="review__text">
                                             Переделывали старый сайт, который уже не приносил продаж. Команда полностью
                                             переработала дизайн, улучшила юзабилити, оптимизировала скорость загрузки.
-                                            Особенно порадовала работа с поведенческими факторами — проанализировали,
-                                            где пользователи уходят, и исправили проблемные места. Результат: конверсия
-                                            выросла в 2 раза, а поисковый трафик увеличился на 70%. Отдельное спасибо за
+                                            Результат: конверсия выросла в 2 раза, а поисковый трафик увеличился на 70%. Отдельное спасибо за
                                             обучение — подробно показали, как работать с административной панелью,
                                             теперь сами можем добавлять товары и акции.
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="mob__arrs">
+                            <div class="title__arr arr-l">
+                                <svg fill="currentColor" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/>
+                                </svg>
+                            </div>
+                            <div class="mob__pag"></div>
+                            <div class="title__arr arr-r">
+                                <svg fill="currentColor" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"/>
+                                </svg>
+                            </div>
+
                         </div>
                     </div>
 
@@ -1999,6 +2070,53 @@
         integrity="sha512-gloNJjJNXOqLPOVxOJ/Sg9VN4jSPZpDdEQC+CDP0TczZ6OaOk0Ru1daFEOT/XAJY7fYABwFWVRXOx4HMFr6+lA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
+
+<div class="mobile-menu">
+    <div class="mob__menu-close">&times;</div>
+    <div class="mobile-menu__inner">
+        <nav class="mobile-nav" aria-label="Мобильная навигация">
+            <ul class="mobile-nav__list">
+                <li class="mobile-nav__item mobile-dropdown">
+                    <div class="mobile-nav__link-wrapper">
+                        <a class="mobile-nav__link" data-scroll="services">Услуги</a>
+                        <button class="mobile-dropdown__btn" aria-label="Открыть подменю">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="mobile-dropdown__menu">
+                        <li><a data-scroll="support">Поддержка и доработки</a></li>
+                        <li><a data-scroll="dev">Разработка сайта под ключ</a></li>
+                        <li><a data-scroll="seo">SEO-оптимизация</a></li>
+                        <li><a data-scroll="safety">Производительность и безопасность</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" data-scroll="whywe">О нас</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" data-scroll="cases">Портфолио</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" data-scroll="reviews">Отзывы</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="mobile-nav__link" data-scroll="faq">FAQ</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="mobile-menu__contacts">
+            <a href="tel:89000000000" class="mobile-menu__phone">8 900 000 00 00</a>
+            <button class="btn mobile-menu__btn" data-modal="callback">
+                <span>
+                    Связаться с нами
+                </span>
+            </button>
+        </div>
+    </div>
+</div>
 
 <div class="modal" id="simpleModal">
     <div class="modal-content">

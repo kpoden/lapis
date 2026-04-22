@@ -75,6 +75,7 @@
 
 .review__author {
     margin-bottom: 5px;
+    margin-left: 15px;
     width: fit-content;
     position: relative;
 
@@ -83,7 +84,7 @@
         content: "";
         top: 50%;
         transform: translateY(-50%);
-        right: -15px;
+        left: -15px;
         width: 6px;
         height: 6px;
         border-radius: 50%;

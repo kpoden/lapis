@@ -17,6 +17,9 @@
         font-size: 14px;
     }
 
+    .callback__contacts {
+        flex-wrap: wrap;
+    }
     
 
 }
@@ -246,8 +249,115 @@
         height: 250px;
     }
 
+    .review__meta {
+        gap: 20px;
+    }
+
+    .reviews__title-item {
+        font-size: 20px;
+    }
+
+    .reviews__text {
+        font-size: 16px;    
+        padding: 20px;
+    }
+
     .callback__wrapper {
         flex-direction: column;
+    }
+
+    .faq__item {
+        padding: 12px 15px;
+    }
+
+    .faq__qu {
+        font-size: 18px;
+    }
+
+    .faq__qu svg {
+        right: 10px;
+    }
+
+    .faq__ans-inner {
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .callback__contact {
+        font-size: 14px;
+    }
+
+    .callback__wrapper {
+        gap: 20px;
+    }
+
+    .title__arrs {
+        display: none;
+    }
+
+    .callback__form {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .header__decor_1 {
+        min-height: 55px;
+    }
+
+    .callback__form-title {
+        font-size: 18px;
+    }    
+
+    .case__inner-slider {
+        height: 250px;
+    }
+
+    .case__descr {
+        bottom: -250px;
+        left: 0;
+        width: 100%;
+        box-shadow: unset;
+        border-top: 1px #9b9b9b solid;
+    }
+
+    .case__descr ul li {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+
+    .case__slide {
+        height: 500px;
+    }
+
+    .services__item h3 {
+        font-size: 20px;
+    }
+
+    .services__list {
+        gap: 20px;
+    }
+
+    .service__prices {
+        padding: 15px;
+    }
+
+    .service__techs .service__steps h4  {
+        font-size: 18px;
+    }
+
+    .service__techs .service__steps .service__steps-title {
+        font-size: 18px;
+    }
+
+    .service__techs .service__steps .service__step-title {
+        font-size: 16px;
+    }
+
+    .service__techs .service__steps .service__step-text {
+        font-size: 14px;
     }
     
     
@@ -255,8 +365,30 @@
 
 
 @media(max-width: 480px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .header .header__logo img {
+        height: 35px;
+        width: auto;
+    }
+
+    .burger-btn {
+        margin-left: 30px;
+    }
+
     .services__tabs {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service__text-inner {
+        font-size: 16px;
+    }
+
+    .btn span {
+        font-size: 14px;
     }
 
     
@@ -275,7 +407,15 @@
     }
 
     .reviews__slider {
-        height: 300px;
+        height: 350px;
+    }
+
+    .footer__main {
+        flex-direction: column;
+    }
+
+    .footer__cols {
+        flex-direction: column;
     }
 
     
